@@ -1,2 +1,2 @@
 # portfolio
-My professional portfolio, please feel free and take a look.
+My professional portfolio, please feel free to take a look.
