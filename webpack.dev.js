@@ -1,3 +1,7 @@
+module.exports = merge(commonConfig, webpackDevConfig);
+
+'use strict';
+
 const merge = require('webpack-merge');
 const commonConfig = require('./webpack.common');
 
@@ -19,16 +23,5 @@ webpackDevConfig.plugins = [
   new HotModuleReplacementPlugin(),
 ];
 
-webpackDevConfig.module = {};
-webpackDevConfig.module.rules = [
-  {
-    test: /\.s?css$/,
-    use: [
-      'style-loader',
-      'css-loader',
-      'sass-loader',
-    ],
-  },
-];
-
 module.exports = merge(commonConfig, webpackDevConfig);
+

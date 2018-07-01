@@ -18,7 +18,6 @@ webpackConfig.output = {
   publicPath: process.env.CDN_URL,
 };
 
-
 webpackConfig.plugins = [
   new HtmlWebpackPlugin({
     title: 'Portfolio',
@@ -35,6 +34,8 @@ if (production) {
 }
 
 webpackConfig.module = {};
+
+const finalLoader = production ? MiniCssPlugin.loader : 'style-loader';
 
 webpackConfig.module.rules = [
   {
@@ -54,5 +55,13 @@ webpackConfig.module.rules = [
         cacheDirectory: true,
       },
     },
+  },
+  {
+    test: /\.scss$/,
+    use: [
+      finalLoader,
+      'css-loader',
+      'sass-loader',
+    ],
   },
 ];
