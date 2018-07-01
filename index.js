@@ -1,15 +1,10 @@
 'use strict';
 
-require('dotenv').config();
+const express = require('express');
+const app = express();
 
-var express = require('express');  // eslint-disable-line
-var app = express();  // eslint-disable-line
+app.use(express.static(`${__dirname}/build`));
 
-if (process.env.NODE_ENV !== 'production') {
-  console.log('-----DEVELOPMENT SETTINGS-----');
-  require('babel-register');
-  require('./src/main');
-} else {
-  console.log('-----PRODUCTION SETTINGS-----');
-  require('./build/main'); //eslint-disable-line
-}
+app.get('*', (request, response) => {
+  response.sendFile(`${__dirname}/build/index.html`);
+});
