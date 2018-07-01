@@ -1,0 +1,15 @@
+@import '../../style/vars';
+
+header {
+  background: black;
+
+  nav {
+    text-align: right;
+    font-family: $julius-sans-one;
+
+    li {
+      display: inline-block;
+      margin: 1vw 3vw;
+    }
+  }
+}
