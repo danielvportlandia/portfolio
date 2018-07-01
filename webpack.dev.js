@@ -4,8 +4,8 @@ module.exports = merge(commonConfig, webpackDevConfig);
 
 const merge = require('webpack-merge');
 const commonConfig = require('./webpack.common');
-
 const { HotModuleReplacementPlugin } = require('webpack');
+const MiniCSSPlugin = require('mini-css-extract-plugin');
 
 const webpackDevConfig = {};
 
@@ -21,7 +21,22 @@ webpackDevConfig.devServer = {
 
 webpackDevConfig.plugins = [
   new HotModuleReplacementPlugin(),
+  new MiniCSSPlugin({
+    filename: '[name].[hash].css',
+  }),
+];
+
+webpackDevConfig.module = {};
+
+webpackDevConfig.module.rules = [
+  {
+    test: /\.scss$/,
+    use: [
+      MiniCSSPlugin.loader,
+      'css-loader',
+      'sass-loader',
+    ],
+  },
 ];
 
 module.exports = merge(commonConfig, webpackDevConfig);
-
