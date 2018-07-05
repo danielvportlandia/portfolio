@@ -1,17 +1,11 @@
 @import '../../style/vars';
 
 header {
-  background: black;
-  color: white;
+  display: flex;
 
-  nav {
-    text-align: right;
-    font-family: $berkshire-swash;
-
-    li {
-      display: inline-block;
-      margin: 1vw 3vw;
-      text-decoration: none;
-    }
+  li {
+    display: inline-block;
+    margin: 1vw 3vw;
+    text-decoration: none;
   }
 }
