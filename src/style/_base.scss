@@ -1,5 +1,9 @@
 @import 'vars';
 
+* {
+  outline: red dashed 1px;
+}
+
 body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -28,7 +32,7 @@ h1, h2 {
 }
 
 p {
-  font-family: $homemade-apple;
+  font-family: $amiko;
   max-width: $max-width;
   margin: 2em auto;
 }
@@ -44,6 +48,41 @@ input {
   p {
     font-size: 3em;
   }
+}
+
+.image-container {
+  max-width: 900px;
+  margin: 3vw auto;
+  text-align: center;
+  position: relative;
+}
+
+.image-text {
+  font-size: 4em;
+  position: absolute;
+}
+
+.writing-img-text {
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $off-white;
+  font-family: $damion;
+  font-size: 6em;
+}
+
+.disc-golf-text {
+  top: 65%;
+  left: 7%;
+  font-family: $audiowide;
+}
+
+.programming-text {
+  top: 15%;
+  left: 2%;
+  color: white;
+  font-family: $press-start-2P;
+  font-size: 2.5em;
 }
 
 @media (max-width: 600px) {
