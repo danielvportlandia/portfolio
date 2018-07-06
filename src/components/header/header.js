@@ -12,7 +12,6 @@ export default class Header extends React.Component {
           <li><Link to='/bloomio-project'>Bloomio</Link></li>
         </nav>
         <h1 className="title">Daniel Shelton</h1>
-        <h2 className="subTitle">Full-Stack JavaScript Developer</h2>
         <nav className='nav-right'>
           <li><Link to='/about'>About</Link></li>
           <li><Link to='/qualifications'>Qualifications</Link></li>

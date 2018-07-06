@@ -1,8 +1,8 @@
 @import 'vars';
 
-* {
-  outline: red dashed 1px;
-}
+// * {
+//   outline: red dashed 1px;
+// }
 
 body {
   -webkit-background-size: cover;
@@ -27,10 +27,6 @@ img {
   min-height:100vh;
 }
 
-h1, h2 {
-  font-family: $berkshire-swash;
-}
-
 p {
   font-family: $amiko;
   max-width: $max-width;
@@ -52,9 +48,10 @@ input {
 
 .image-container {
   max-width: 900px;
-  margin: 3vw auto;
+  margin: 5em auto;
   text-align: center;
   position: relative;
+  box-shadow: 3px 3px 4px $selectable;
 }
 
 .image-text {
@@ -83,6 +80,11 @@ input {
   color: white;
   font-family: $press-start-2P;
   font-size: 2.5em;
+}
+
+.hero-text {
+  margin: 5em auto;
+  box-shadow: 0px 3px 4px $selectable;
 }
 
 @media (max-width: 600px) {

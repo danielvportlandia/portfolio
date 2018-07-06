@@ -7,8 +7,10 @@ export default class Landing extends React.Component {
   render() {
     return (
       <div className='landing'>
-        <p>
-          Daniel Shelton <br/> is a full stack developer in Seattle, Washington. <br/>Passionate about...
+        <p className='hero-text'>
+          Daniel Shelton <br/> is a 
+          Full-Stack Developer in Seattle, 
+          Washington. <br/>Passionate about...
         </p>
         <div className='image-container'>
           <img src={writingImg} />
