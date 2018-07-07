@@ -1,0 +1,14 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5em;
+
+  .SVG-container {
+    font-size: inherit;
+
+    svg {
+      margin: 0.5em 0.5em;
+    }
+  }
+}

@@ -3,6 +3,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Favicon from 'react-favicon';
 
 import Header from '../header/header';
+import Footer from '../footer/footer';
 import Landing from '../landing/landing';
 import Resume from '../resume/resume';
 import favicon from '../../assets/my-favicon.png';
@@ -29,6 +30,7 @@ export default class App extends React.Component {
             <Route exact path="/redeeming-soles-project" component={RedeemingSolesProject}
             />
             <Route exact path="/bloomio-project" component={BloomioProject}/> */}
+            <Footer/>
             </div>
         </BrowserRouter>
     );
