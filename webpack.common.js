@@ -22,7 +22,7 @@ webpackConfig.module = {};
 
 webpackConfig.module.rules = [
   {
-    test: /\.(png|jpg|gif)$/,
+    test: /\.(png|jpg|gif|pdf)$/,
     use: [
       'file-loader',
     ],
@@ -42,7 +42,7 @@ webpackConfig.module.rules = [
     ],
   },
   {
-    test: /\.(js$|jsx$)/,
+    test: /\.(js|jsx)$/,
     exclude: /node_modules/,
     use: {
       loader: 'babel-loader',
