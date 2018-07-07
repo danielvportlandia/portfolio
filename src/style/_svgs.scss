@@ -1,0 +1,16 @@
+@import 'vars';
+
+svg {
+  width: 1em;
+  height: 1em;
+}
+
+// -------------------------------------------------------------------------------
+// Rotation speed for drop-down SVGs upon losing focus
+// -------------------------------------------------------------------------------
+.caret {
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
