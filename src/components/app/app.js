@@ -1,10 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
+import Favicon from 'react-favicon';
 
 import Header from '../header/header';
 import Landing from '../landing/landing';
 import Resume from '../resume/resume';
-
+import favicon from '../../assets/my-favicon.png';
 import ROUTES from '../../routes';
 // import About from '../about/about';
 // import Contact from '../contact/contact';
@@ -18,6 +19,7 @@ export default class App extends React.Component {
     return (
         <BrowserRouter>
           <div>
+            <Favicon url={favicon}/>
             <Header/>
             {/* <Route path='*' component={Landing}/> */}
             <Route exact path={ROUTES.LANDING} component={Landing}/>
