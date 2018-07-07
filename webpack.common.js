@@ -22,13 +22,27 @@ webpackConfig.module = {};
 
 webpackConfig.module.rules = [
   {
-    test: /\.(png|svg|jpg|gif)$/,
+    test: /\.(png|jpg|gif)$/,
     use: [
       'file-loader',
     ],
   },
   {
-    test: /\.js$/,
+    test: /\.svg$/,
+    use: [
+      {
+        loader: 'babel-loader',
+      },
+      {
+        loader: 'react-svg-loader',
+        options: {
+          jsx: true,
+        },
+      },
+    ],
+  },
+  {
+    test: /\.(js$|jsx$)/,
     exclude: /node_modules/,
     use: {
       loader: 'babel-loader',
