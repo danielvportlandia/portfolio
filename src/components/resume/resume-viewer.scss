@@ -1,0 +1,11 @@
+@import '../../style/vars';
+
+.PDF-Viewer {
+  margin-top: 5em;
+  
+  canvas {
+    border: 0.5em solid black;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 5px $selectable;
+  }
+}
