@@ -7,7 +7,7 @@ import codingImg from '../../assets/programming.jpg';
 export default class Landing extends React.Component {
   render() {
     return (
-      <div className='landing'>
+      <div className='landing-page'>
         <p className='hero-text'>
           Daniel Shelton <br/> 
           is a Full-Stack JavaScript Developer in Seattle, Washington. <br/>

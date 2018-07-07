@@ -3,9 +3,11 @@ import { BrowserRouter, Route } from 'react-router-dom';
 
 import Header from '../header/header';
 import Landing from '../landing/landing';
+import Resume from '../resume/resume';
+
+import ROUTES from '../../routes';
 // import About from '../about/about';
 // import Contact from '../contact/contact';
-// import Resume from '../resume/resume';
 // import RedeemingSolesProject from '../redeeming-soles-project/redeeming-soles-project';
 // import BloomioProject from '../bloomio-project/bloomio-project';
 
@@ -18,10 +20,10 @@ export default class App extends React.Component {
           <div>
             <Header/>
             {/* <Route path='*' component={Landing}/> */}
-            <Route exact path="/" component={Landing}/>
+            <Route exact path={ROUTES.LANDING} component={Landing}/>
+            <Route exact path={ROUTES.RESUME} component={Resume}/>
             {/* <Route exact path="/about" component={About}/>
             <Route exact path="/contact" component={Contact}/>
-            <Route exact path="/resume" component={Resume}/>
             <Route exact path="/redeeming-soles-project" component={RedeemingSolesProject}
             />
             <Route exact path="/bloomio-project" component={BloomioProject}/> */}
