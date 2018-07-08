@@ -8,7 +8,7 @@ import Landing from '../landing/landing';
 import Resume from '../resume/resume';
 import favicon from '../../assets/my-favicon.png';
 import ROUTES from '../../routes';
-// import About from '../about/about';
+import About from '../about/about';
 // import Contact from '../contact/contact';
 // import RedeemingSolesProject from '../redeeming-soles-project/redeeming-soles-project';
 // import BloomioProject from '../bloomio-project/bloomio-project';
@@ -25,8 +25,8 @@ export default class App extends React.Component {
             {/* <Route path='*' component={Landing}/> */}
             <Route exact path={ROUTES.LANDING} component={Landing}/>
             <Route exact path={ROUTES.RESUME} component={Resume}/>
-            {/* <Route exact path="/about" component={About}/>
-            <Route exact path="/contact" component={Contact}/>
+            <Route exact path={ROUTES.ABOUT} component={About}/>
+            {/* <Route exact path="/contact" component={Contact}/>
             <Route exact path="/redeeming-soles-project" component={RedeemingSolesProject}
             />
             <Route exact path="/bloomio-project" component={BloomioProject}/> */}
