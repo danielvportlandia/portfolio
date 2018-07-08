@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PDFViewer from './resume-viewer';
 import PDFButton from './resume-download-button';
 
+import ROUTES from '../../routes';
 import './resume.scss';
 
 class Resume extends React.Component {
@@ -14,6 +16,18 @@ class Resume extends React.Component {
           <PDFButton/>
         </a>
         <PDFViewer/>
+        <p>If you would like to know more, then please click on any of the following...</p>
+        <div className='button-wrapper'>
+          <Link to={ROUTES.BACKGROUND}>
+            <button className='raise'>SEE MORE BACKGROUND DETAILS</button>
+          </Link>
+          <Link to={ROUTES.EDUCATION}>
+            <button className='raise'>SEE MORE EDUCATION DETAILS</button>
+          </Link>
+          <Link to={ROUTES.SKILLS}>
+            <button className='raise'>SEE MORE SKILLS DETAILS</button>
+          </Link>
+        </div>
       </div>
     );
   }

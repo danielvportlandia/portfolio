@@ -11,8 +11,8 @@ class Footer extends React.Component {
       <footer>
         <h3 className='footer-message'>Let&apos;s get in touch!&nbsp;👋</h3>
         <div className='SVG-container'>
-          <a href='https://github.com/danielvportlandia'><GithubSVG/></a>
-          <a href='https://www.linkedin.com/in/daniel-w-shelton/'><LinkedinSVG/></a>
+          <a href='https://github.com/danielvportlandia' target='_blank' rel='noopener noreferrer'><GithubSVG/></a>
+          <a href='https://www.linkedin.com/in/daniel-w-shelton/' target='_blank' rel='noopener noreferrer'><LinkedinSVG/></a>
         </div>
       </footer>
     );
