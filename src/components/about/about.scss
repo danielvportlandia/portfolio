@@ -39,42 +39,6 @@
   a:hover {
     text-decoration: underline;
   }
-
-  button {  
-    color: var(--color);
-    transition: 0.25s;
-    border-radius: 3rem;
-    background: none;
-    border: 2px solid;
-    font: inherit;
-    line-height: 1;
-    margin: 0.5em;
-    padding: 1em 2em;
-    
-    &:hover,
-    &:focus { 
-      border-color: var(--hover);
-      color: $buttonAE;
-      text-shadow: 0 1px;
-    }
-  }
-
-  .raise:hover,
-  .raise:focus {
-    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-    transform: translateY(-0.25em);
-  }
-
-  $colors: (
-    raise: $buttonBE,
-  );
-
-  @each $button, $color in $colors {
-    .#{$button} {
-      --color: #{$color};
-      --hover: #{adjust-hue($color, 60deg)};
-    }
-  }
 }
 
 .bio {

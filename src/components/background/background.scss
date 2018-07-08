@@ -1,0 +1,31 @@
+@import '../../style/vars';
+
+.background-page {
+  line-height: 2em;
+  width: 600px;
+  margin: 2em auto;
+
+  h1 {
+    margin: 6em auto;
+    line-height: 1.5;
+  }
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  h3 {
+    margin-top: 0;
+    font-size: 1em;
+    color: $selectable;
+  }
+
+  section {
+    text-align: left;
+    margin-bottom: 3em;
+
+    article {
+      margin-bottom: 6em;
+    }
+  }
+}
