@@ -48,7 +48,7 @@
 .download-button:before {
   z-index:2;
   color:#fff;
-  background-color:#3e87ec;
+  background-color: $buttonBE;
   content:attr(data-label); // initial button text
 }
 
@@ -71,7 +71,7 @@
 }
 
 .download-button:active:before {
-  background-color:#3571c8;
+  background-color:$buttonBE;
 }
 
 .download-button.loading {
