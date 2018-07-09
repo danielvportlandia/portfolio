@@ -16,7 +16,10 @@ class Resume extends React.Component {
           <PDFButton/>
         </a>
         <PDFViewer/>
-        <p>If you would like to know more, then please click on any of the following...</p>
+        <p>
+          If you would like to know more about my qualifications, then please click 
+          on any of the following...
+        </p>
         <div className='button-wrapper'>
           <Link to={ROUTES.BACKGROUND}>
             <button className='raise'>SEE MORE BACKGROUND DETAILS</button>
