@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import ROUTES from '../../routes';
+import MedicalSVG from '../../icomoon/SVG/aid-kit.svg';
 import './background.scss';
 
 class BackGround extends React.Component {
@@ -9,14 +10,13 @@ class BackGround extends React.Component {
     return (
       <div className='background-page'>
         <h1>
-          I have an extensive history in the medical industry
+          I have 9+ years experience working in the medical industry
           working both directly with patients as well as on the
-          administrative side
-          where I held the following titles:
+          administrative side where I held the following titles:
         </h1>
         <section>
           <article>
-            <h2>Medical Coding Specialist</h2>
+            <h2>Medical Coding Specialist <MedicalSVG/></h2>
             <h3>September 2015 - January 2018</h3>
             <p>
               As a medical coding specialist I reviewed Physician&apos;s documentation and 
@@ -45,7 +45,7 @@ class BackGround extends React.Component {
             </p>
           </article>
           <article>
-            <h2>Revenue Cycle Specialist</h2>
+            <h2>Revenue Cycle Specialist <MedicalSVG/></h2>
             <h3>February 2014 - September 2015</h3>
             <p>
               My primary responsbility in this role was to identify the causes of medical claim 
@@ -64,7 +64,7 @@ class BackGround extends React.Component {
             </p>
           </article>
           <article>
-            <h2>Patient Care Coordinator</h2>
+            <h2>Patient Care Coordinator <MedicalSVG/></h2>
             <h3>February 2012 - February 2014</h3>
             <p>
               This was my entry point into the medical industry. I worked directly with patients 

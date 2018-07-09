@@ -7,7 +7,7 @@ import './education.scss';
 class Education extends React.Component {
   render() {
     return (
-      <div ClassName='education-page'>
+      <div className='education-page'>
         <h1>Education</h1>
         <h2>Code Fellows</h2>
         {/* TODO: download CF logo */}

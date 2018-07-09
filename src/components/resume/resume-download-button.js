@@ -8,7 +8,7 @@ class PDFButton extends React.Component {
     super(props);
 
     this.state = {
-      buttonText: 'Download Resumé PDF',
+      buttonText: 'DOWNLOAD RESUMÉ PDF',
     };
 
     autoBind.call(this, PDFButton);
@@ -23,7 +23,7 @@ class PDFButton extends React.Component {
       e.target.classList.remove('loading');
       e.target.removeAttribute('disabled');
       this.setState({
-        buttonText: 'Thank you!',
+        buttonText: 'THANK YOU!',
       });
     }, 1500);
   }

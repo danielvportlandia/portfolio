@@ -5,9 +5,11 @@ import Favicon from 'react-favicon';
 // -------------------------------------------------------------------------------------------------
 // CONSTANT COMPONENT IMPORTS
 // -------------------------------------------------------------------------------------------------
+import favicon from '../../assets/my-favicon.png';
 import ScrollToTop from '../scroll-to-top/scroll-to-top';
 import Header from '../header/header';
 import Footer from '../footer/footer';
+import '../../style/main.scss';
 
 // -------------------------------------------------------------------------------------------------
 // COMPONENT IMPORTS
@@ -19,12 +21,9 @@ import About from '../about/about';
 import BackGround from '../background/background';
 import Education from '../education/education';
 import Skills from '../skills/skills';
-// import Contact from '../contact/contact';
-// import RedeemingSolesProject from '../redeeming-soles-project/redeeming-soles-project';
+import Contact from '../contact/contact';
+import RSProject from '../redeeming-soles-project/redeeming-soles-project';
 // import BloomioProject from '../bloomio-project/bloomio-project';
-
-import favicon from '../../assets/my-favicon.png';
-import '../../style/main.scss';
 
 export default class App extends React.Component {
   render() {
@@ -41,10 +40,10 @@ export default class App extends React.Component {
               <Route exact path={ROUTES.BACKGROUND} component={BackGround}/>
               <Route exact path={ROUTES.SKILLS} component={Skills}/>
               <Route exact path={ROUTES.EDUCATION} component={Education}/>
-              {/* <Route exact path="/contact" component={Contact}/>
-              <Route exact path="/redeeming-soles-project" component={RedeemingSolesProject}
+              <Route exact path={ROUTES.CONTACT} component={Contact}/>
+              <Route exact path={ROUTES.RS_PROJECT} component={RSProject}
               />
-              <Route exact path="/bloomio-project" component={BloomioProject}/> */}
+              {/* <Route exact path="/bloomio-project" component={BloomioProject}/> */}
               <Footer/>
             </div>
           </ScrollToTop>
