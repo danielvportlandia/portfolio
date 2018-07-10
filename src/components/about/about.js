@@ -9,19 +9,21 @@ class About extends React.Component {
   render() {
     return (
       <div className='about-page'>
-        <h1>Who is this guy?</h1>
+        <p className='hero-text'>Who is this guy?</p>
         <img src={profilePic} alt='My loving family and I' title='My loving family and I'/>
         <section className='bio'>
           <h2>Hello, I&apos;m Daniel!</h2>
           <p>
-            I&apos;m a Full-Stack (MERN) JavaScript Developer and father to one beautiful baby 
-            girl. I am passionate about both delivering an engaging and intuitive UX as well as 
-            meticulously wireframing and constructing an API&apos;s functionality.
+            I&apos;m a <strong>Full-Stack (MERN) JavaScript Developer</strong> and father to 
+            one beautiful baby girl. I am passionate about both delivering an engaging and 
+            intuitive UX as well as meticulously wireframing and constructing an API&apos;s 
+            functionality.
           </p>
           <p>
-            What really gets me excited though is being able to turn a client&apos;s dream into a 
-            reality. I am always looking forward to taking on new challenges and finding 
-            opportunities that let me create meaningful products that enriches the lives of others.
+            What really gets me excited though is <strong>being able to turn a client&apos;s 
+            dream into a reality. </strong>I am always looking forward to taking on new challenges 
+            and finding opportunities that let me create meaningful products that enriches the 
+            lives of others.
           </p>
           <p>
             Once I had decided to pivot my career from the medical industry into the tech industry, 

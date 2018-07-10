@@ -13,10 +13,11 @@
     text-align: left;
   }
 
-  p {
-    text-align: left;
-    color: $selectable;
-    margin: 1em 0;
+  section {
+    p {
+      text-align: left;
+      margin: 1em 0;
+    }
   }
 
   img {
@@ -24,10 +25,6 @@
     border: 1px solid black;
     box-shadow: 3px 3px 4px $selectable;
     margin-bottom: 4em;
-  }
-
-  strong {
-    color: #969696;
   }
 
   a {

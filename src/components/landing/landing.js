@@ -4,6 +4,8 @@ import discGolfImg from '../../assets/disc-golf.jpg';
 import writingImg from '../../assets/writing.jpg';
 import codingImg from '../../assets/programming.jpg';
 
+import ROUTES from '../../routes';
+
 export default class Landing extends React.Component {
   render() {
     return (
@@ -16,7 +18,6 @@ export default class Landing extends React.Component {
         <div className='image-container'>
           <img className='writing-image' src={writingImg} />
           <h3 className='image-text writing-img-text'>Writing</h3>
-          <p className='writing-details'>Testing</p>
         </div>
         <div className='image-container'>
           <img src={discGolfImg} />
@@ -26,7 +27,9 @@ export default class Landing extends React.Component {
           <img src={codingImg} />
           <h3 className='image-text programming-text'>Programming</h3>
         </div>
-        <button type='button'><Link to='/about'>Learn More</Link></button>
+        <Link to={ROUTES.ABOUT}>
+          <button className='raise'>CLICK HERE TO LEARN MORE</button>
+        </Link>
       </div>
     );
   }

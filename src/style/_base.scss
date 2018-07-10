@@ -12,26 +12,15 @@ body {
   background-size: cover;
   text-align: center;
   width:100%;
-  background-color: $off-white;
-  font-family: $amiko;
+  font-family: $poppins;
+  background: linear-gradient(#e58748, #e5bb48, #e5e548, #73cdc8, #78cd73, #c0cd73);
 }
 
 img {
   max-width: 900px;
 }
 
-.app {
-  background-color:#db6c27;
-  background: rgba(219,108,39,0.92);
-  position:absolute;
-  left:15%;
-  right:15%;
-  top:0;
-  min-height:100vh;
-}
-
 p {
-  font-family: $amiko;
   max-width: $max-width;
   margin: 2em auto;
 }
@@ -40,95 +29,68 @@ input {
   margin-right: 10px;
 }
 
+// -------------------------------------------------------------------------------------------------
+// TYPOGRAPHY STYLING FOR HERO TEXT AT THE TOP OF EACH PAGE
+// -------------------------------------------------------------------------------------------------
+.hero-text {
+  margin: 4em auto 2em auto;
+  font-size: 3em;
+  line-height: 1.2;
+}
+
+// -------------------------------------------------------------------------------------------------
+// LANDING PAGE STYLING
+// -------------------------------------------------------------------------------------------------
 .landing-page {
   width: 80%;
   margin: 5vw auto;
 
-  p {
-    font-size: 3em;
+  .image-container {
+    max-width: 900px;
+    margin: 7em auto 5em auto;
+    text-align: center;
+    position: relative;
+    box-shadow: 3px 3px 4px $selectable;
+  }
+  
+// -------------------------------------------------------------------------------------------------
+// IMAGE TYPOGRAPHY STYLING
+// -------------------------------------------------------------------------------------------------
+  .image-text {
+    font-size: 4em;
+    position: absolute;
+    color: $off-white;
+  }
+  
+  .writing-img-text {
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: $damion;
+    font-size: 6em;
+  }
+  
+  .disc-golf-text {
+    top: 65%;
+    left: 7%;
+    font-family: $audiowide;
+  }
+  
+  .programming-text {
+    top: 15%;
+    left: 2%;
+    font-family: $press-start-2P;
+    font-size: 2.5em;
   }
 }
 
-.image-container {
-  max-width: 900px;
-  margin: 5em auto;
-  text-align: center;
-  position: relative;
-  box-shadow: 3px 3px 4px $selectable;
-
-  p {
-    display: none;
-  }
-}
-
-#writing-img:hover + #writing-pop-up {
-  display: block;
-}
-
-.image-text {
-  font-size: 4em;
-  position: absolute;
-  color: $off-white;
-}
-
-.writing-img-text {
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: $damion;
-  font-size: 6em;
-}
-
-.disc-golf-text {
-  top: 65%;
-  left: 7%;
-  font-family: $audiowide;
-}
-
-.programming-text {
-  top: 15%;
-  left: 2%;
-  font-family: $press-start-2P;
-  font-size: 2.5em;
-}
-
-.hero-text {
-  margin: 5em auto;
-  box-shadow: 0px 3px 4px $selectable;
-}
-
-.writing-details {
-  display: none;
-}
-
-.writing-image:hover + .writing-details {
-    display: block;
-}
-
+// -------------------------------------------------------------------------------------------------
+// BUTTON STYLING
+// -------------------------------------------------------------------------------------------------
 button a {
   text-decoration: none;
   color: black;
   font-size: 1.5em;
-}
-
-@media (max-width: 600px) {
-
-  .app {
-    position:absolute;
-    left:5%;
-    right:5%;
-  }
-
-}
-
-@media screen and (max-width: 600px) {
-
-  .app {
-    position:absolute;
-    left:5%;
-    right:5%;
-  }
-
 }
 
 .raise {  
