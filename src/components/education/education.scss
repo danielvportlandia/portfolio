@@ -67,6 +67,8 @@
           min-width: 592px;
 
           img {
+            border-radius: 3px;
+            box-shadow: 3px 3px 4px $selectable;
             width: 90%;
             height: auto;
             margin: 0 2em;

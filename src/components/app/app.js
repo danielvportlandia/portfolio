@@ -32,7 +32,7 @@ export default class App extends React.Component {
           <ScrollToTop>
             <Favicon url={favicon}/>
             <Header/>
-            <Route path='*' component={AuthRedirect}/>
+            {/* <Route path='*' component={AuthRedirect}/> */}
             <Route exact path={ROUTES.LANDING} component={Landing}/>
             <Route exact path={ROUTES.RESUME} component={Resume}/>
             <Route exact path={ROUTES.ABOUT} component={About}/>

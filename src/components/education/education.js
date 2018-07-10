@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import ROUTES from '../../routes';
 import CFBannerImg from '../../assets/CF-logo-transparent.png';
 import CFWallImg from '../../assets/CF-wall.jpg';
+import vanillaJSImg from '../../assets/vanilla-javascript.jpg';
 import './education.scss';
 
 class Education extends React.Component {
@@ -23,7 +24,7 @@ class Education extends React.Component {
                   <h3>Rigorous but effective</h3>
                 </div>
                 <p>
-                  It&apos;s rigorous and takes true dedication, focus, and a whole lot of hard 
+                  It takes true dedication, focus, and a whole lot of hard 
                   work, but if you can hang in there long enough, then it will become one of 
                   the most rewarding experiences of your life, just as it was for me.
                 </p>
@@ -42,7 +43,7 @@ class Education extends React.Component {
                   <h2 className='reflection-text'>What I learned about myself</h2>
                   <ul>
                     <li>I have an eye for design</li>
-                    <li>I am good at root-cause analytical thinking</li>
+                    <li>I am knack for root-cause analytical thinking</li>
                     <li>I thrive when collaborating with others</li>
                   </ul>      
                 </div>
@@ -57,17 +58,29 @@ class Education extends React.Component {
                   <h3>Doing Things The Hard Way</h3>
                 </div>
                 <p>
-                  201 fundamentals
+                  This was my introduction to many CS concepts such as <strong>Object-Oriented 
+                  Programming (OOP), Document Object Model (DOM) Manipulation & Traversal</strong>, 
+                  and utilizing Version Control workflows with <strong>GitHub </strong>
+                  and <strong>Git</strong> to bring projects together.
                 </p>
                 <p>
-                  HTML and CSS, styling
+                  As this was the introductory course to web development, we extensively 
+                  covered <strong>HTML5</strong> and best practices with structuring web 
+                  pages. Beyond this structuring aspect to the web, we also focused on gathering 
+                  a solid understanding of <strong>CSS3</strong> and how it&apos;s used to style 
+                  web pages.
                 </p>
                 <p>
-                  vanilla JavaScript
+                  Now, about doing things the hard way. In the beginning, we were taught how 
+                  to create an application solely by using <strong>vanilla JavaScript</strong>, 
+                  no libraries, no dependencies, just good ol&apos; fashion plain JavaScript. 
+                  There was a good reason behind us learning vanilla JavaScript, it was because 
+                  we were laying down a foundation of how the language worked at it&apos;s core 
+                  from which our knowledge could expand upon.
                 </p>
               </article>
               <article className='right-content'>
-                <img src={CFWallImg} className='article-image'/>
+                <img src={vanillaJSImg} className='article-image'/>
                 <div className='reflection'>
                   <h2 className='reflection-text'>Skills acquired</h2>
 
