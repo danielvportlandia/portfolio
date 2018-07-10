@@ -2,9 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import ROUTES from '../../routes';
+
+// -------------------------------------------------------------------------------------------------
+// IMAGE IMPORTS
+// -------------------------------------------------------------------------------------------------
 import CFBannerImg from '../../assets/CF-logo-transparent.png';
 import CFWallImg from '../../assets/CF-wall.jpg';
 import vanillaJSImg from '../../assets/vanilla-javascript.jpg';
+import agileImg from '../../assets/agile-development.jpg';
+import backendDevImg from '../../assets/backend-development.jpg';
+import graduationImg from '../../assets/js-401-graduating-class.jpg';
 import './education.scss';
 
 class Education extends React.Component {
@@ -120,17 +127,29 @@ class Education extends React.Component {
                   <h3>Collaboration is the Key</h3>
                 </div>
                 <p>
-                  301 pair programming and Agile
+                  In the 301 course, we got our first taste of server-side code. In addition to 
+                  cementing our understanding of the fundamentals, we also focused on the 
+                  collaborative aspect of software development by regularly pair-programming with 
+                  classmates and adopting <strong>Agile methodologies</strong> into our 
+                  project&apos;s workflow while using services like <strong>Slack</strong> 
+                  and <strong>Trello</strong> to keep in constant contact with teammates.
                 </p>
                 <p>
-                  jQuery
+                  At this point in our education we were introduced to <strong>NPM</strong> and the 
+                  concept of installing and managing dependencies in our code, and from there 
+                  things really picked up. The first library we were introduced to was
+                  <strong> jQuery</strong> where we focused on DOM manipulation and 
+                  making <strong>AJAX</strong> calls to external APIs.
                 </p>
                 <p>
-                  NPM
+                  Working with server-side routing, we learned how to construct data bases
+                  with <strong>PostgreSQL</strong> and make <strong>SQL</strong> queries. 
+                  After constructing our first full-stack application (in a week-long sprint) 
+                  we deployed our sites via <strong>Heroku</strong>.
                 </p>
               </article>
               <article className='right-content'>
-                <img src={CFWallImg} className='article-image'/>
+                <img src={agileImg} className='article-image'/>
                 <div className='reflection'>
                   <h2 className='reflection-text'>Skills acquired</h2>
 
@@ -187,7 +206,7 @@ class Education extends React.Component {
                 </p>
               </article>
               <article className='right-content'>
-                <img src={CFWallImg} className='article-image'/>
+                <img src={backendDevImg} className='article-image'/>
                 <div className='reflection'>
                   <h2 className='reflection-text'>Skills acquired</h2>
 
@@ -237,7 +256,7 @@ class Education extends React.Component {
                 </p>
               </article>
               <article className='right-content'>
-                <img src={CFWallImg} className='article-image'/>
+                <img src={graduationImg} className='article-image'/>
                 <div className='reflection'>
                   <h2 className='reflection-text'>Skills acquired</h2>
 
