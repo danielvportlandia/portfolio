@@ -13,9 +13,9 @@ export default class Landing extends React.Component {
         <p className='hero-text'>
           Daniel Shelton <br/> 
           is a Full-Stack JavaScript Developer in Seattle, Washington. <br/>
-          He is most passionate about...
+          Passionate about UX design, data management, and delivering quality content.
         </p>
-        <div className='image-container'>
+        {/* <div className='image-container'>
           <img className='writing-image' src={writingImg} />
           <h3 className='image-text writing-img-text'>Writing</h3>
         </div>
@@ -26,9 +26,9 @@ export default class Landing extends React.Component {
         <div className='image-container'>
           <img src={codingImg} />
           <h3 className='image-text programming-text'>Programming</h3>
-        </div>
+        </div> */}
         <Link to={ROUTES.ABOUT}>
-          <button className='raise'>CLICK HERE TO LEARN MORE</button>
+          <button className='raise'>CLICK HERE TO GET TO KNOW ME</button>
         </Link>
       </div>
     );

@@ -10,7 +10,6 @@ import RS_SVG from '../../icomoon/SVG/gift.svg';
 import LeafSVG from '../../icomoon/SVG/leaf.svg';
 import MedicalSVG from '../../icomoon/SVG/aid-kit.svg';
 import EducationSVG from '../../icomoon/SVG/embed2.svg';
-import SkillsTreeSVG from '../../icomoon/SVG/tree.svg';
 
 import './header.scss';
 
@@ -46,7 +45,6 @@ export default class Header extends React.Component {
             <div className='dropdown-list'>
               <Link to='/background'>Background <MedicalSVG className='icomoon-svgs'/></Link>
               <Link to='/education'>Education <EducationSVG className='icomoon-svgs'/></Link>
-              <Link to='/skills'>Skills <SkillsTreeSVG className='icomoon-svgs'/></Link>
             </div>
           </div>
           <div className='nav-button-container'>

@@ -261,9 +261,24 @@ class Education extends React.Component {
             </div>
           </section>
         </div>
-        <Link to={ROUTES.SKILLS}>
-          <button className='raise'>SEE SKILLS NEXT</button>
-        </Link>
+        <p className='bottom-text'>
+          Other technologies and skills I&apos;ve acquired.
+        </p>
+        <div className='svgs-wrapper'>
+        
+        </div>
+        <p className='bottom-text'>
+          If you&apos;d like to see how I applied these skills, please see one of my 
+          projects below.
+        </p>
+        <div className='button-wrapper'>
+          <Link to={ROUTES.RS_PROJECT}>
+            <button className='raise'>REDEEMING SOLES</button>
+          </Link>
+          <Link to={ROUTES.BLOOMIO_PROJECT}>
+            <button className='raise'>BLOOMIO</button>
+          </Link>
+        </div>
       </div>
     );
   }
