@@ -196,13 +196,25 @@ class Education extends React.Component {
                   <h3>MongoDB, Express, Node.js</h3>
                 </div>
                 <p>
-                  Node.js & Express
+                  Th advanced JavaScript course started off by diving deep into working with
+                  <strong> Node.js</strong> & <strong>Express</strong>. Before we could rely on 
+                  Express for all of our server-side routing needs, we had to build our own TCP 
+                  server from scratch and fully understand concepts such as <strong>REST, CRUD, 
+                  and asynchronous programming</strong>.
                 </p>
                 <p>
-                   MongoDB & Mongoose
+                   I utilized <strong>MongoDB</strong> & <strong>Mongoose</strong> to create 
+                   cross-platform and open-source document-oriented NoSQL databases, complete 
+                   with Schemas and full-CRUD functionality, this rounded out my knowledge working 
+                   with data bases as I had previously learned how to work with SQL databases.
                 </p>
                 <p>
-                  TDD & Jest
+                  A major focus of the curriculum was in <strong>Test Driven Development (TDD)
+                  </strong> and how to take the &quot;red light green light&quot; approach to 
+                  software development. By writing unit tests via Facebook&apos;s 
+                  <strong> Jest</strong>, I gained a broader perspective of data 
+                  flow and management as I continually identified more and more &quot;edge 
+                  cases&quot; to account for in my code which helped to prevent future bugs.
                 </p>
               </article>
               <article className='right-content'>
@@ -246,6 +258,8 @@ class Education extends React.Component {
                   <h3>Mastering React</h3>
                 </div>
                 <p>
+                  I chose the full-stack JavaScript track due to JavaScript&apos;s versatility 
+                  and close relationship to the browser.
                   React & Redux
                 </p>
                 <p>

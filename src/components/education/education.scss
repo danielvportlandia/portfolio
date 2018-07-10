@@ -76,10 +76,10 @@
           }
 
           .reflection {
-            ul {
-              li {
-                margin: 1em 0;
-              }
+            h2 {
+              text-align: center;
+              text-decoration: underline $selectable;
+              margin: 1.8em auto;
             }
           }
         }
