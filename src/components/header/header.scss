@@ -44,7 +44,7 @@ header {
     display: inline-block;
     margin: 1em 3em;
     text-decoration: none;
-    color: $selectable;
+    color: $off-white;
   }
 
   .link-button a:hover {
@@ -65,7 +65,7 @@ header {
     background-color: inherit;
     font-family: inherit;
     font-size: 1.3em;
-    color: $selectable;
+    color: $off-white;
     text-align: left;
   }
 
@@ -84,7 +84,7 @@ header {
 
   .dropdown-list a:-webkit-any-link {
     text-decoration: none;
-    color: $selectable;
+    color: $off-white;
     display: block;
     text-align: left;
     margin: 1em 0;
@@ -97,6 +97,21 @@ header {
 
 .dropdown:hover .dropdown-list {
   display: block;
+}
+
+// -------------------------------------------------------------------------------
+// Icomoon SVGs
+// -------------------------------------------------------------------------------
+.icomoon-svgs {
+  width: 1em;
+  height: 1em;
+}
+
+.caret {
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 // -------------------------------------------------------------------------------

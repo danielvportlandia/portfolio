@@ -20,18 +20,18 @@ export default class Header extends React.Component {
       <header className='topnav'>
         <nav className='nav-left'>
           <div className='nav-button-container'>
-            <button className='link-button'><Link to='/'>Home <HomeSVG/></Link></button>
+            <button className='link-button'><Link to='/'>Home <HomeSVG className='icomoon-svgs'/></Link></button>
           </div>
           <div className='nav-button-container'>
-            <button className='link-button'><Link to='/about'>About <AboutMeSVG/></Link></button>
+            <button className='link-button'><Link to='/about'>About <AboutMeSVG className='icomoon-svgs'/></Link></button>
           </div>
           <div className='dropdown'>
             <button className='dropbutton'>
               Projects <CaretSVG className='caret'/>
             </button>
             <div className='dropdown-list'>
-              <Link to='/redeeming-soles-project'>Redeeming Soles <RS_SVG/></Link>
-              <Link to='/bloomio-project'>Bloomio <LeafSVG/></Link>
+              <Link to='/redeeming-soles-project'>Redeeming Soles <RS_SVG className='icomoon-svgs'/></Link>
+              <Link to='/bloomio-project'>Bloomio <LeafSVG className='icomoon-svgs'/></Link>
             </div>
           </div>
         </nav>
@@ -44,16 +44,16 @@ export default class Header extends React.Component {
               Qualifications <CaretSVG className='caret'/>
             </button>
             <div className='dropdown-list'>
-              <Link to='/background'>Background <MedicalSVG/></Link>
-              <Link to='/education'>Education <EducationSVG/></Link>
-              <Link to='/skills'>Skills <SkillsTreeSVG/></Link>
+              <Link to='/background'>Background <MedicalSVG className='icomoon-svgs'/></Link>
+              <Link to='/education'>Education <EducationSVG className='icomoon-svgs'/></Link>
+              <Link to='/skills'>Skills <SkillsTreeSVG className='icomoon-svgs'/></Link>
             </div>
           </div>
           <div className='nav-button-container'>
-            <button className='link-button'><Link to='/resume'>Resume <ResumeSVG/></Link></button>
+            <button className='link-button'><Link to='/resume'>Resume <ResumeSVG className='icomoon-svgs'/></Link></button>
           </div>
           <div className='nav-button-container'>
-            <button className='link-button'><Link to='/contact'>Contact <ContactSVG/></Link></button>
+            <button className='link-button'><Link to='/contact'>Contact <ContactSVG className='icomoon-svgs'/></Link></button>
           </div>
         </nav>
       </header>
