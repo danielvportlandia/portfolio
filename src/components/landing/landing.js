@@ -18,7 +18,6 @@ export default class Landing extends React.Component {
         <div className='image-container'>
           <img className='writing-image' src={writingImg} />
           <h3 className='image-text writing-img-text'>Writing</h3>
-          <p className='writing-details'>Testing</p>
         </div>
         <div className='image-container'>
           <img src={discGolfImg} />

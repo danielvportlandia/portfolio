@@ -31,21 +31,19 @@ export default class App extends React.Component {
     return (
         <BrowserRouter>
           <ScrollToTop>
-            <div>
-              <Favicon url={favicon}/>
-              <Header/>
-              <Route path='*' component={AuthRedirect}/>
-              <Route exact path={ROUTES.LANDING} component={Landing}/>
-              <Route exact path={ROUTES.RESUME} component={Resume}/>
-              <Route exact path={ROUTES.ABOUT} component={About}/>
-              <Route exact path={ROUTES.BACKGROUND} component={BackGround}/>
-              <Route exact path={ROUTES.SKILLS} component={Skills}/>
-              <Route exact path={ROUTES.EDUCATION} component={Education}/>
-              <Route exact path={ROUTES.CONTACT} component={Contact}/>
-              <Route exact path={ROUTES.RS_PROJECT} component={RSProject}/>
-              <Route exact path={ROUTES.BLOOMIO_PROJECT} component={BloomioProject}/>
-              <Footer/>
-            </div>
+            <Favicon url={favicon}/>
+            <Header/>
+            <Route path='*' component={AuthRedirect}/>
+            <Route exact path={ROUTES.LANDING} component={Landing}/>
+            <Route exact path={ROUTES.RESUME} component={Resume}/>
+            <Route exact path={ROUTES.ABOUT} component={About}/>
+            <Route exact path={ROUTES.BACKGROUND} component={BackGround}/>
+            <Route exact path={ROUTES.SKILLS} component={Skills}/>
+            <Route exact path={ROUTES.EDUCATION} component={Education}/>
+            <Route exact path={ROUTES.CONTACT} component={Contact}/>
+            <Route exact path={ROUTES.RS_PROJECT} component={RSProject}/>
+            <Route exact path={ROUTES.BLOOMIO_PROJECT} component={BloomioProject}/>
+            <Footer/>
           </ScrollToTop>
         </BrowserRouter>
     );

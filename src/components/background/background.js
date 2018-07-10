@@ -9,11 +9,10 @@ class BackGround extends React.Component {
   render() {
     return (
       <div className='background-page'>
-        <h1>
-          I have 9+ years experience working in the medical industry
-          working both directly with patients as well as on the
-          administrative side where I held the following titles:
-        </h1>
+        <p className='hero-text'>
+          I have 9+ years experience working in the medical industry where I held the 
+          following titles:
+        </p>
         <section>
           <article>
             <h2>Medical Coding Specialist <MedicalSVG/></h2>

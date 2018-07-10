@@ -9,7 +9,7 @@ class Footer extends React.Component {
   render() {
     return (
       <footer>
-        <h3 className='footer-message'>Let&apos;s get in touch!&nbsp;👋</h3>
+        <h3 className='footer-message'>&copy; Daniel Shelton - 2018</h3>
         <div className='SVG-container'>
           <a href='https://github.com/danielvportlandia' target='_blank' rel='noopener noreferrer'><GithubSVG/></a>
           <a href='https://www.linkedin.com/in/daniel-w-shelton/' target='_blank' rel='noopener noreferrer'><LinkedinSVG/></a>

@@ -9,7 +9,7 @@ class About extends React.Component {
   render() {
     return (
       <div className='about-page'>
-        <h1>Who is this guy?</h1>
+        <p className='hero-text'>Who is this guy?</p>
         <img src={profilePic} alt='My loving family and I' title='My loving family and I'/>
         <section className='bio'>
           <h2>Hello, I&apos;m Daniel!</h2>

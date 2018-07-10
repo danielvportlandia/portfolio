@@ -14,4 +14,6 @@ class AuthRedirect extends React.Component {
   }
 }
 
+// TODO: Fix redirect error for redirecting to same page (console log error)
+
 export default AuthRedirect;

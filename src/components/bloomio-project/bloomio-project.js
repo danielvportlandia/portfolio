@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ROUTES from '../../routes';
 
+import ROUTES from '../../routes';
 import './bloomio-project.scss';
 
 class BloomioProject extends React.Component {
