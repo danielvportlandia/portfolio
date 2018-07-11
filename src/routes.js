@@ -5,7 +5,6 @@ const ROUTES = {
   BLOOMIO_PROJECT: '/bloomio-project',
   BACKGROUND: '/background',
   EDUCATION: '/education',
-  SKILLS: '/skills',
   RESUME: '/resume',
   CONTACT: '/contact',
 };

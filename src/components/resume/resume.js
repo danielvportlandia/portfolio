@@ -17,8 +17,7 @@ class Resume extends React.Component {
         </a>
         <PDFViewer/>
         <p>
-          If you would like to know more about my qualifications, then please click 
-          on any of the following...
+          If you would like to know more about my qualifications, then please click below.
         </p>
         <div className='button-wrapper'>
           <Link to={ROUTES.BACKGROUND}>
@@ -26,9 +25,6 @@ class Resume extends React.Component {
           </Link>
           <Link to={ROUTES.EDUCATION}>
             <button className='raise'>SEE MORE EDUCATION DETAILS</button>
-          </Link>
-          <Link to={ROUTES.SKILLS}>
-            <button className='raise'>SEE MORE SKILLS DETAILS</button>
           </Link>
         </div>
       </div>

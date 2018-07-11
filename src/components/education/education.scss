@@ -67,6 +67,8 @@
           min-width: 592px;
 
           img {
+            border-radius: 3px;
+            box-shadow: 3px 3px 4px $selectable;
             width: 90%;
             height: auto;
             margin: 0 2em;
@@ -74,14 +76,34 @@
           }
 
           .reflection {
-            ul {
-              li {
-                margin: 1em 0;
-              }
+            h2 {
+              text-align: center;
+              text-decoration: underline $selectable;
+              margin: 1.8em auto;
             }
           }
         }
       }
     }
   }
+}
+
+.cls-1 path {
+  fill: white;
+}
+
+.heroku-path {
+  fill: $heroku-purple;
+}
+
+.bottom-text {
+  font-size: 2em;
+  margin: 3em auto;
+}
+
+.svg-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2em;     
 }
