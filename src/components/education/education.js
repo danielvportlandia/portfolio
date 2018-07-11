@@ -342,12 +342,6 @@ class Education extends React.Component {
           </section>
         </div>
         <p className='bottom-text'>
-          Other technologies and skills I&apos;ve acquired.
-        </p>
-        <div className='svgs-wrapper'>
-        
-        </div>
-        <p className='bottom-text'>
           If you&apos;d like to see how I applied these skills, please see one of my 
           projects below.
         </p>
