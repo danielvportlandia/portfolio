@@ -8,7 +8,11 @@ class RSProject extends React.Component {
   render() {
     return (
       <div className='rs-project-page'>
-        <h1>Redeeming Soles</h1>
+        <div className='banner-wrapper'>
+          <h2>No Kids Left On The Sidelines</h2>
+          <h3>A REDEEMING SOLES INITIATIVE</h3>
+        </div>
+        <p className='hero-text'>A Redeeming Soles Initiative</p>
         <Link to={ROUTES.BLOOMIO_PROJECT}>
           <button className='raise'>SEE NEXT PROJECT</button>
         </Link>
