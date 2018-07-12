@@ -10,13 +10,13 @@
     background-image: url('../../assets/rs-banner.jpg');
     background-position: center center;
     background-size: cover;
+    border-radius: 3px;
+    box-shadow: 3px 3px 4px $shadow;
     display: flex;
     height: 320px;
     justify-content: center;
     margin-top: 8em;
     position: relative;
-    border-radius: 3px;
-    box-shadow: 3px 3px 4px $shadow;
   }
 
   h2 {
@@ -35,32 +35,88 @@
   }
 
   h3 {
-    background-color: rgba(250, 250, 250, 0.2);
-    margin: 0;
     position: absolute;
     bottom: 0;
     right: 0;
+
+    background-color: rgba(250, 250, 250, 0.2);
+    margin: 0;
   }
 
-  p {
+  .opening-text {
     font-size: 2em;
     margin: 3em auto;
   }
 
+  section {
+    text-align: left;
+
+    article {
+      text-align: left;
+
+      h4 {
+        font-size: 3em;
+      }
+    }
+  }
+  
   aside {
     position: fixed;
     bottom: 0;
     right: 0;
-
+    
     background-color: rgba(250, 250, 250, 0.2);
     border-radius: 3px;
+    max-height: 80%;
     max-width: 15%;
-
+    
     ul {
       list-style: none;
-
+      
       li {
         margin: 1em;
+      }
+    }
+  }
+}
+
+.article-details-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  max-height: 70%;
+
+  .article-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .article-text {
+      font-size: 1em;
+      margin: 1em auto;
+      text-align: left;
+    }
+  }
+
+  .images-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    figure {
+      height: 45%;
+      margin: 2em;
+      width: 50%;
+
+      img {
+        box-shadow: 3px 3px 4px $selectable;
+      }
+
+      figcaption {
+        color: $off-white;
+        font-size: 0.9em;
+        padding-left: 1em;
       }
     }
   }
