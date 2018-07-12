@@ -6,16 +6,23 @@ import architectureImg from '../../assets/rs-architecture.jpg';
 import backEndTestingImg from '../../assets/rs-back-end-testing.jpg';
 import frontEndTestingImg from '../../assets/rs-front-end-testing.jpg';
 import loadTestingImg from '../../assets/rs-load-testing.jpg';
+import profileFormImg from '../../assets/rs-profile-form.jpg';
+import userFormImg from '../../assets/rs-user-form.jpg';
+import adminFormImg from '../../assets/rs-admin-form.jpg';
+
+import DebugSVG from '../../icomoon/SVG/bug.svg';
 import './redeeming-soles-project.scss';
 
 class RSProject extends React.Component {
   render() {
     return (
       <div className='rs-project-page'>
+
         <div className='banner-wrapper'>
           <h2>No Kids Left On The Sidelines</h2>
           <h3>A REDEEMING SOLES INITIATIVE</h3>
         </div>
+
         <p className='opening-text'>
           <a className='external-link' href='https://redeemingsoles.org/' target='_blank' rel='noopener noreferrer'>Redeeming Soles</a> is a Seattle-based non-profit organization who is committed to 
           providing proper footwear to underpriviledged men, women, and children throughout 
@@ -85,13 +92,14 @@ class RSProject extends React.Component {
                   <figcaption>Application architecture wireframing</figcaption>
                 </figure>
               </div>
+
             </div>
           </article>
         </section>
 
         <section>
           <article>
-            <h4>Testing</h4>
+            <h4>Testing <DebugSVG className='icomoon-svgs'/></h4>
             <div className='article-details-wrapper'>
 
               <div className='article-text-wrapper'>
@@ -101,12 +109,6 @@ class RSProject extends React.Component {
                   this project, I was also the primary TDD engineer. I performed all unit testing 
                   via Jest.
                 </p>
-                {/* <p className='article-text'>
-                  <strong>Front-End Testing:</strong>
-                </p>
-                <p className='article-text'>
-                  <strong>Load Testing:</strong>
-                </p> */}
               </div>
 
               <div className='images-wrapper'>
@@ -114,15 +116,8 @@ class RSProject extends React.Component {
                   <img src={backEndTestingImg}/>
                   <figcaption>Back-End Testing Results</figcaption>
                 </figure>
-                {/* <figure>
-                  <img src={frontEndTestingImg}/>
-                  <figcaption>Front-End Testing Results</figcaption>
-                </figure>
-                <figure>
-                  <img src={loadTestingImg}/>
-                  <figcaption>Load Testing Results</figcaption>
-                </figure> */}
               </div>
+
             </div>
           </article>
         </section>
@@ -130,6 +125,7 @@ class RSProject extends React.Component {
         <section>
           <article>
             <div className='article-details-wrapper'>
+
               <div className='images-wrapper'>
                 <figure>
                   <img src={frontEndTestingImg}/>
@@ -167,6 +163,78 @@ class RSProject extends React.Component {
                   <figcaption>Load Testing Results</figcaption>
                 </figure>
               </div>
+
+            </div>
+          </article>
+        </section>
+
+        <section>
+          <article>
+          <h4>Prototype Specs</h4>
+            <div className='article-details-wrapper'>
+
+              <div className='article-text-wrapper'>
+                <p className='article-text'>
+                  <strong>Users:</strong><br/>
+                  Can sign up for an account and input their profile information for 
+                  auto-populating request forms and request tracking.
+                </p>
+              </div>
+
+              <div className='images-wrapper'>
+                <figure>
+                  <img src={profileFormImg}/>
+                  <figcaption>Profile Form</figcaption>
+                </figure>
+              </div>
+
+            </div>
+          </article>
+        </section>
+
+        <section>
+          <article>
+            <div className='article-details-wrapper'>
+
+              <div className='images-wrapper'>
+                <figure>
+                  <img src={userFormImg}/>
+                  <figcaption>Request Form</figcaption>
+                </figure>
+              </div>
+
+              <div className='article-text-wrapper'>
+                <p className='article-text'>
+                  <strong>Requests:</strong><br/>
+                  The request form allows for multiple requests to be added, edited, 
+                  and removed before form submission. Once submitted the order is 
+                  tracked as a whole as well as the status of the individual request items.
+                </p>
+              </div>
+
+            </div>
+          </article>
+        </section>
+
+        <section>
+          <article>
+            <div className='article-details-wrapper'>
+
+              <div className='article-text-wrapper'>
+                <p className='article-text'>
+                  <strong>Admin:</strong><br/>
+                  By creating an admin view, warehouse workers are able to input each shoe 
+                  by type as they are sorting the donations. 
+                </p>
+              </div>
+
+              <div className='images-wrapper'>
+                <figure>
+                  <img src={adminFormImg}/>
+                  <figcaption>Administrative Inventory Form</figcaption>
+                </figure>
+              </div>
+
             </div>
           </article>
         </section>
@@ -194,9 +262,9 @@ class RSProject extends React.Component {
             </li>
           </ul>
         </aside>
-        <Link to={ROUTES.BLOOMIO_PROJECT}>
-          <button className='raise'>SEE NEXT PROJECT</button>
-        </Link>
+        <a href='https://redeeming-soles-front.herokuapp.com/login' target='_blank' rel='noopener noreferrer'>
+          <button className='raise'>CHECK OUT THE PROTOTYPE</button>
+        </a>
       </div>
     );
   }
