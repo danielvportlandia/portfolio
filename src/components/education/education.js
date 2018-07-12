@@ -36,7 +36,7 @@ class Education extends React.Component {
                   the most rewarding experiences of your life, just as it was for me.
                 </p>
                 <p>
-                  The Code Fellows curriculum is based on <a href='https://www.codefellows.org/blog/how-to-accelerate-your-learning-with-stacked-modules/' target='_blank' rel='noopener noreferrer'>stacked modules</a> where a new concept is taught each day, which would build upon the previous day. This &quot;bootcamp-style&quot; way of teaching ensures that many topics can be covered in a short amount of time. When we didn&apos;t fully grasped a concept, it was fine. We moved on. By continually moving forward we were forced to grasp the concepts that we barely understood in the first place as we applied them in new ways.
+                  The Code Fellows curriculum is based on <a className='external-link' href='https://www.codefellows.org/blog/how-to-accelerate-your-learning-with-stacked-modules/' target='_blank' rel='noopener noreferrer'>stacked modules</a> where a new concept is taught each day, which would build upon the previous day. This &quot;bootcamp-style&quot; way of teaching ensures that many topics can be covered in a short amount of time. When we didn&apos;t fully grasped a concept, it was fine. We moved on. By continually moving forward we were forced to grasp the concepts that we barely understood in the first place as we applied them in new ways.
                 </p>
                 <p>
                   I have never known a greater group of people than my fellow class mates, they 

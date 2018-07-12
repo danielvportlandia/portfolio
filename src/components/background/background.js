@@ -18,6 +18,10 @@ class BackGround extends React.Component {
             <h2>Medical Coding Specialist <MedicalSVG/></h2>
             <h3>September 2015 - January 2018</h3>
             <p>
+              <a className='external-link' href='https://www.aapc.com/' target='_blank' rel='noopener noreferrer' >AAPC</a>, June 2016 <br/>
+              <strong>Certified Professional Coder</strong>
+            </p>
+            <p>
               As a medical coding specialist I reviewed Physician&apos;s documentation and 
               <strong> abstracted</strong> CPT (current procedural terminology) codes by the 
               medical, surgical, and/or diagnostic procedures and services provided per 

@@ -1,6 +1,10 @@
 @import '../../style/vars';
 
 .rs-project-page {
+  line-height: 2em;
+  margin: 2em auto;
+  width: 70%;
+
   .banner-wrapper {
     align-items: center;
     background-image: url('../../assets/rs-banner.jpg');
@@ -11,6 +15,8 @@
     justify-content: center;
     margin-top: 8em;
     position: relative;
+    border-radius: 3px;
+    box-shadow: 3px 3px 4px $shadow;
   }
 
   h2 {
@@ -34,5 +40,28 @@
     position: absolute;
     bottom: 0;
     right: 0;
+  }
+
+  p {
+    font-size: 2em;
+    margin: 3em auto;
+  }
+
+  aside {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+    background-color: rgba(250, 250, 250, 0.2);
+    border-radius: 3px;
+    max-width: 15%;
+
+    ul {
+      list-style: none;
+
+      li {
+        margin: 1em;
+      }
+    }
   }
 }
