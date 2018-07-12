@@ -56,23 +56,26 @@ class RSProject extends React.Component {
 
               <div className='article-text-wrapper'>
                 <p className='article-text'>
-                  <strong>User Stories:</strong> During and after the meeting with the 
-                  client I constructed the user stories which mirrored the client&apos;s 
-                  desire for the final product.
+                  <strong>User Stories:</strong><br/>
+                  During and after the meeting with the client I 
+                  constructed the user stories which mirrored the 
+                  client&apos;s desire for the final product.
                 </p>
                 <p className='article-text'>
-                  <strong>Wireframing:</strong> Using the user stories as a guide I 
-                  began visualizing the overall structure of the project and how all the 
-                  pieces will communicate with each other. I quickly got to sketching out 
-                  the back-end functionality of the application while focusing on how our 
-                  system can be integrated into their current warehouse distribution system.
+                  <strong>Wireframing:</strong><br/>
+                  Using the user stories as a guide I began visualizing the overall structure 
+                  of the project and how all the pieces will communicate with each other. I 
+                  quickly got to sketching out the back-end functionality of the application 
+                  while focusing on how our system can be integrated into their current warehouse 
+                  distribution system.
                 </p>
                 <p className='article-text'>
-                  <strong>MVP:</strong> As the time-frame for a working prototype was only 
-                  1 week, I had to appropriately scope the project and parse out what the 
-                  Most Viable Product (MVP) would look like. After doing so, all 
-                  other features were placed into &quot;project phases&quot; for 
-                  later implementation. Now, it was time to start building the prototype.
+                  <strong>MVP:</strong><br/>
+                  As the time-frame for a working prototype was only 1 week, I had to appropriately 
+                  scope the project and parse out what the Most Viable Product (MVP) would look 
+                  like. After doing so, all other features were placed into &quot;project 
+                  phases&quot; for later implementation. Now, it was time to start building the 
+                  prototype.
                 </p>
               </div>
 
@@ -91,11 +94,12 @@ class RSProject extends React.Component {
             <h4>Testing</h4>
             <div className='article-details-wrapper'>
 
-              <div className='test-text-wrapper'>
+              <div className='article-text-wrapper'>
                 <p className='article-text'>
                   <strong>Back-End Testing:</strong><br/>
-                  <br/>
-                  In addition to being the solution architect and primary back-end developer on this project, I was also the primary TDD engineer. I performed all unit testing via Jest.
+                  In addition to being the solution architect and primary back-end developer on 
+                  this project, I was also the primary TDD engineer. I performed all unit testing 
+                  via Jest.
                 </p>
                 {/* <p className='article-text'>
                   <strong>Front-End Testing:</strong>
@@ -118,6 +122,50 @@ class RSProject extends React.Component {
                   <img src={loadTestingImg}/>
                   <figcaption>Load Testing Results</figcaption>
                 </figure> */}
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section>
+          <article>
+            <div className='article-details-wrapper'>
+              <div className='images-wrapper'>
+                <figure>
+                  <img src={frontEndTestingImg}/>
+                  <figcaption>Front-End Testing Results</figcaption>
+                </figure>
+              </div>
+
+              <div className='article-text-wrapper'>
+                <p className='article-text'>
+                  <strong>Front-End Testing:</strong><br/>
+                  As a UX Designer on this project I worked with <strong>React</strong> and 
+                  <strong> Redux</strong> extensively including writing the majority of our 
+                  front-end unit & integration testing by utilizing <strong>React-Enzyme</strong>.
+                </p>
+              </div>
+
+            </div>
+          </article>
+        </section>
+
+        <section>
+          <article>
+            <div className='article-details-wrapper'>
+
+              <div className='article-text-wrapper'>
+                <p className='article-text'>
+                  <strong>Load Testing:</strong><br/>
+                  Performed via Artillery.io.
+                </p>
+              </div>
+
+              <div className='images-wrapper'>
+                <figure>
+                  <img src={loadTestingImg}/>
+                  <figcaption>Load Testing Results</figcaption>
+                </figure>
               </div>
             </div>
           </article>
