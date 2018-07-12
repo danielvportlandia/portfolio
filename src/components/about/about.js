@@ -27,7 +27,7 @@ class About extends React.Component {
           </p>
           <p>
             Once I had decided to pivot my career from the medical industry into the tech industry, 
-            I enrolled at <a href='https://www.codefellows.org' target='_blank' rel='noopener noreferrer'>Code Fellows</a>, where I earned my certificate in advanced software 
+            I enrolled at <a className='external-link' href='https://www.codefellows.org' target='_blank' rel='noopener noreferrer'>Code Fellows</a>, where I earned my certificate in advanced software 
             development with JavaScript. I learned not only how to develop applications but was 
             also taught 
             <strong> Agile methodologies, best coding practices, and how to collaborate with 

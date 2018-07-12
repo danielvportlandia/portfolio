@@ -1,8 +1,8 @@
 @import 'vars';
 
-* {
-  outline: red dashed 1px;
-}
+// * {
+//   outline: red dashed 1px;
+// }
 
 body {
   -webkit-background-size: cover;
@@ -35,6 +35,16 @@ input {
   font-size: 3em;
   line-height: 1.2;
   margin: 4em auto 2em auto;
+}
+
+.external-link {
+  text-decoration: none;
+  color: $selectable;
+  font-weight: 400;
+
+  &:hover {
+    color: $off-white;
+  }
 }
 
 // -------------------------------------------------------------------------------------------------
