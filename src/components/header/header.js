@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// -------------------------------------------------------------------------------------------------
+// SVG IMPORTS
+// -------------------------------------------------------------------------------------------------
 import HomeSVG from '../../icomoon/SVG/home.svg';
 import AboutMeSVG from '../../icomoon/SVG/user-tie.svg';
 import CaretSVG from '../../icomoon/SVG/play3.svg';
