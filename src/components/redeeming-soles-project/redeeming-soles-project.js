@@ -9,6 +9,7 @@ import userFormImg from '../../assets/rs-user-form.jpg';
 import adminFormImg from '../../assets/rs-admin-form.jpg';
 
 import DebugSVG from '../../icomoon/SVG/bug.svg';
+import UserSVG from '../../icomoon/SVG/user.svg';
 import './redeeming-soles-project.scss';
 
 class RSProject extends React.Component {
@@ -62,18 +63,19 @@ class RSProject extends React.Component {
               <div className='article-text-wrapper'>
                 <p className='article-text'>
                   <strong>User Stories:</strong><br/>
-                  During and after the meeting with the client I 
-                  constructed the user stories which mirrored the 
-                  client&apos;s desire for the final product.
+                  <UserSVG className='icomoon-svgs'/> As a coach, I want to be able to signup for an account. <br/>
+                  <UserSVG className='icomoon-svgs'/> I want to be able to submit a form requesting shoes for individual students. <br/>
+                  <UserSVG className='icomoon-svgs'/> I want to be able to add, edit, and remove requests before I submit the form. <br/>
+                  <br/>
+                  <UserSVG className='icomoon-svgs'/> As a warehouse employee, I want a simple inventory input form for shoes. <br/>
+                  <UserSVG className='icomoon-svgs'/> I want to be immediately notified if the pair of shoes I&apos;m inputting has been requested so that I may distribute them quickly. <br/>
                 </p>
-                <p className='article-text'>
+                {/* <p className='article-text'>
                   <strong>Wireframing:</strong><br/>
-                  Using the user stories as a guide I began visualizing the overall structure 
-                  of the project and how all the pieces will communicate with each other. I 
-                  quickly got to sketching out the back-end functionality of the application 
+                  I quickly got to sketching out the back-end functionality of the application 
                   while focusing on how our system can be integrated into their current warehouse 
                   distribution system.
-                </p>
+                </p> */}
                 <p className='article-text'>
                   <strong>MVP:</strong><br/>
                   As the time-frame for a working prototype was only 1 week, I had to appropriately 
@@ -89,6 +91,14 @@ class RSProject extends React.Component {
                   <img src={architectureImg}/>
                   <figcaption>Application architecture wireframing</figcaption>
                 </figure>
+                <div className='article-text-wrapper'>
+                  <p className='article-text'>
+                    <strong>Wireframing:</strong><br/>
+                    I quickly got to sketching out the back-end functionality of the application 
+                    while focusing on how our system can be integrated into their current warehouse 
+                    distribution system.
+                  </p> 
+                </div>
               </div>
 
             </div>

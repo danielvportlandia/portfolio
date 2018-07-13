@@ -41,13 +41,13 @@ class About extends React.Component {
           </p>
           <p>
             I am currently free-lancing in the Greater Seattle Area but am 
-            <strong> available for FTE</strong>. If you are at all interested in hiring an 
-            incredibly smart, hilarious, hard-working, but most of all <strong>humble </strong> 
-            employee, then please click the link below to see my resumé.
+            <Link to={ROUTES.CONTACT} className='external-link'><strong> available for FTE</strong></Link>. If you are at all 
+            interested in hiring an incredibly smart, hilarious, hard-working, but most of all
+            <strong> humble</strong> employee, then please click the link below to see my resumé.
           </p>
         </section>
         <Link to={ROUTES.RESUME} className='buttons'>
-          <button className='raise'>CHECK OUT MY RESUME</button>
+          <button className='raise'>CHECK OUT MY RESUMÉ</button>
         </Link>
       </div>
     );
