@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import ROUTES from '../../routes';
 
 import architectureImg from '../../assets/rs-architecture.jpg';
 import backEndTestingImg from '../../assets/rs-back-end-testing.jpg';
