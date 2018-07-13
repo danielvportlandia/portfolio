@@ -2,6 +2,7 @@ import React from 'react';
 
 import bloomioDiagramImg from '../../assets/bloomio-schema-diagram.jpg';
 import bloomioTestingImg from '../../assets/bloomio-testing.jpg';
+import bloomioCactiImg from '../../assets/bloomio-cacti.jpg';
 import DebugSVG from '../../icomoon/SVG/bug.svg';
 
 import './bloomio-project.scss';
@@ -22,12 +23,29 @@ class BloomioProject extends React.Component {
         <section>
           <article>
             <h4>Idea Origins</h4>
-            <div className='article-text-wrapper'>
-              <p className='article-text'>
-                Living in apartments I have always had plants, not only do they clean the air but 
-                they spruce up the place, however, I never did have much luck keeping my plant 
-                collection alive. 
-              </p>
+            <div className='article-details-wrapper'>
+            
+              <div className='article-text-wrapper'>
+                <p className='article-text'>
+                  Living in apartments I have always had plants, not only do they clean the air but 
+                  they spruce the place up, however, I never did have much luck keeping my plant 
+                  collection alive (<strong>except for my cacti</strong>). My plants often died 
+                  from either being over watered or not watered enough. Even though I could keep
+                  track of their watering schedules via a calendar,  it was still a lot of work 
+                  to manually log which plants to water and when and to figure out when their 
+                  next watering date should be. <br/>
+                  <br/>
+                  So that&apos;s where the idea for <strong>Bloomio</strong> came from and the hope 
+                  for this project is to help others keep their plants alive.
+                </p>
+              </div>
+
+              <div className='images-wrapper'>
+                <figure>
+                  <img src={bloomioCactiImg}/>
+                </figure>
+              </div>
+
             </div>
           </article>
         </section>
@@ -94,7 +112,8 @@ class BloomioProject extends React.Component {
               <div className='article-text-wrapper'>
                 <p className='article-text'>
                   <strong>What I learned:</strong><br/>
-                    How to manage web pre and post hooks, how to effectively test with Jest. How to manage releationships between various schemas and their routes.
+                    How to manage web pre and post hooks, how to effectively test with Jest. 
+                    How to manage releationships between various schemas and their routes.
                 </p>
               </div>
 
