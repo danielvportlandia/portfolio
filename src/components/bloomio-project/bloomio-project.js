@@ -4,6 +4,7 @@ import bloomioDiagramImg from '../../assets/bloomio-schema-diagram.jpg';
 import bloomioTestingImg from '../../assets/bloomio-testing.jpg';
 import bloomioCactiImg from '../../assets/bloomio-cacti.jpg';
 import DebugSVG from '../../icomoon/SVG/bug.svg';
+import UserSVG from '../../icomoon/SVG/user.svg';
 
 import './bloomio-project.scss';
 
@@ -27,16 +28,17 @@ class BloomioProject extends React.Component {
             
               <div className='article-text-wrapper'>
                 <p className='article-text'>
-                  Living in apartments I have always had plants, not only do they clean the air but 
-                  they spruce the place up, however, I never did have much luck keeping my plant 
-                  collection alive (<strong>except for my cacti</strong>). My plants often died 
-                  from either being over watered or not watered enough. Even though I could keep
-                  track of their watering schedules via a calendar,  it was still a lot of work 
-                  to manually log which plants to water and when and to figure out when their 
-                  next watering date should be. <br/>
+                  Living in apartments most of my life I have always had house plants, to not only 
+                  clean the air in the apartment but also to spruce them up a bit, however, I never 
+                  did have much luck keeping my plants alive (<strong>except for my 
+                  cacti</strong>). My plants often died from either being over watered or not 
+                  watered enough. Even though I could keep track of their watering schedules with a 
+                  calendar,  it was still a lot of work to manually log which plants to water and 
+                  when and to figure out when their next watering date should be. <br/>
                   <br/>
-                  So that&apos;s where the idea for <strong>Bloomio</strong> came from and the hope 
-                  for this project is to help others keep their plants alive.
+                  So that&apos;s where the idea for <strong>Bloomio</strong> originated. Bloomio 
+                  was the answer to helping others manage their plants and keept them happy and 
+                  alive.
                 </p>
               </div>
 
@@ -58,15 +60,22 @@ class BloomioProject extends React.Component {
               <div className='article-text-wrapper'>
                 <p className='article-text'>
                   <strong>User Stories:</strong><br/>
-                  overall product info.
+                  <UserSVG className='icomoon-svgs'/> I want to be able to login to my account. <br/>
+                  <UserSVG className='icomoon-svgs'/> I want to be able to upload a profile pic. <br/>
+                  <UserSVG className='icomoon-svgs'/> I want to be able to add, edit, and remove plants in my collection. <br/>
+                  <UserSVG className='icomoon-svgs'/> I want to be notified via text if I have plants that require care. <br/>
+                  <UserSVG className='icomoon-svgs'/> I want to be able to find plants in the database with care instructions. <br/>
                 </p>
                 <p className='article-text'>
                   <strong>Wireframing:</strong><br/>
-                  wireframing process.
+                  Working off of the user stories, my team and I put together our wireframing.
                 </p>
                 <p className='article-text'>
                   <strong>MVP:</strong><br/>
-                  What is MVP and scoping the project.
+                  As we scoped the project, some desired functionality such as fertilizer reminders 
+                  and having a well-detailed master data base of plants were considered not 
+                  attainable within our week-long sprint and thus pushed into phase 2 of this 
+                  project.
                 </p>
               </div>
 
@@ -89,7 +98,7 @@ class BloomioProject extends React.Component {
               <div className='article-text-wrapper'>
                 <p className='article-text'>
                   <strong>Back-End Testing:</strong><br/>
-                  Unit testing performed via Jest.
+                  Unit testing performed via Jest with over 90% in line-coverage.
                 </p>
               </div>
 
@@ -106,23 +115,40 @@ class BloomioProject extends React.Component {
 
         <section>
           <article>
-          <h4>Outcome</h4>
+          <h4>Project Details</h4>
             <div className='article-details-wrapper'>
 
               <div className='article-text-wrapper'>
-                <p className='article-text'>
-                  <strong>What I learned:</strong><br/>
-                    How to manage web pre and post hooks, how to effectively test with Jest. 
-                    How to manage releationships between various schemas and their routes.
+                <p>
+                  <strong>Collaboration:</strong><br/>
+                  After a thorough planning phase, we scaffolded the project and pair programmed to 
+                  create all the necessary schemas of the project. Testing was done alongside 
+                  development with a &quot;red green&quot; approach.
+                </p>
+                <p>
+                  <strong>External API Integration:</strong><br/>
+                  With our schemas in place, we began the process of integrating external APIs into 
+                  the project. The first being AWS&apos;s S3 for image hosting, the second, was 
+                  Twilio for sending daily plant notifications to the user at a preferred time.
                 </p>
               </div>
 
-              {/* <div className='images-wrapper'>
-                <figure>
-                  <img src={profileFormImg}/>
-                  <figcaption>Profile Form</figcaption>
-                </figure>
-              </div> */}
+              <div className='article-text-wrapper'>
+                <p>
+                  <strong>Problem Encountered:</strong><br/>
+                    One problem we encountered in this project was trying to manage the next water 
+                    date functionality, as dates proved to be tricky to deal with, after some 
+                    research, we implemented <strong> Moment.js</strong> to resolve this problem 
+                    quickly.
+                </p>
+                <p>
+                  <strong>What I learned:</strong><br/>
+                    How to manage web pre-hooks and post-hooks with schemas <br/>
+                    how to effectively test with Jest. <br/>
+                    How to connect applications to <strong>AWS&apos;s S3</strong> for image hosting 
+                    and <strong>Twilio</strong> for providing text-based services.
+                </p>
+              </div>
 
             </div>
           </article>
