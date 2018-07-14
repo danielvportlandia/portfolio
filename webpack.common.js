@@ -9,7 +9,7 @@ webpackConfig.entry = `${__dirname}/src/main.js`;
 webpackConfig.output = {
   filename: '[name].[hash].js',
   path: `${__dirname}/build`,
-  publicPath: process.env.CDN_URL,
+  // publicPath: process.env.CDN_URL,
 };
 
 webpackConfig.plugins = [
