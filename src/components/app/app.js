@@ -31,6 +31,7 @@ export default class App extends React.Component {
         <BrowserRouter>
           <ScrollToTop>
             <Favicon url={favicon}/>
+            <meta name='viewport' content='width=device-width, initial-scale=1.0' />
             <Header/>
             <Route path='*' component={AuthRedirect}/>
             <Route exact path={ROUTES.LANDING} component={Landing}/>
