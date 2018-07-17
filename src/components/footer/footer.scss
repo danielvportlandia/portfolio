@@ -1,7 +1,11 @@
+@import '../../style/vars';
+
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  background-color: $background-banner;
   font-size: 1em;
   margin-top: 5em;
 
@@ -10,6 +14,10 @@ footer {
 
     svg {
       margin: 0.5em 0.5em;
+
+      path {
+        fill: $buttonAE;
+      }
     }
   }
 }

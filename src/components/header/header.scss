@@ -1,27 +1,122 @@
 @import '../../style/vars';
+@import '../../style/mixins';
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 
+  background-color: $background-banner;
+
+  @include sm {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    width: 100%;
+    z-index: 3;
+    min-height: 6em;
+
+    &:focus, &:hover ul {
+      display: block;
+    }
+  }
+
+  @include md {
+    font-size: 0.8em;
+  }
+
   h1 {
     margin-top: 2em;
-    padding-left: 3em;
-    font-size: 2em;
+    font-size: 1.5em;
+
+    @include sm {
+      display: none;
+    }
   }
 
   h1 a:-webkit-any-link {
     text-decoration: none;
-    color: black;
+    color: $off-white;
   }
 
   h1 a:hover {
     text-shadow: 0 1px;
+    color: $buttonAE;
   }
 
   nav {
     margin-top: 3em;
+  }
+
+  ul {
+    background-color: gray;
+    display: none;
+    font-size: 2em;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+
+    li a {
+      border-right: 1px solid #f4f4f4;
+      color: black;
+      display: block;
+      padding: 20px 20px;
+      text-decoration: none;
+
+      &:hover {
+        background-color: #f4f4f4;
+      }
+    }
+  }
+}
+
+// -------------------------------------------------------------------------------
+// NAVIGATION & MENU DISPLAYS (left & right)
+// -------------------------------------------------------------------------------
+.nav-left {
+  @include sm {
+    display: none;
+  }
+}
+
+.nav-right {
+  @include sm {
+    display: none;
+  }
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: none;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+
+  &:hover ~ .menu-list{
+    display: block;
+    float: left;
+  }
+
+  @include sm {
+    display: inline-block;
+    font-size: 3em;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    // .menu:hover .nav-left {
+    //   display: block;
+    // }
+    // &:hover .nav-right {
+    //   display: block;
+    // }
   }
 }
 
@@ -42,13 +137,12 @@ header {
 
   .link-button a {
     display: inline-block;
-    margin: 1em 3em;
     text-decoration: none;
     color: $off-white;
   }
 
   .link-button a:hover {
-    color: black;
+    color: $buttonAE;
   }
 }
 
@@ -64,19 +158,19 @@ header {
     outline: none;
     background-color: inherit;
     font-family: inherit;
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: $off-white;
     text-align: left;
   }
 
   .dropbutton:hover {
-    color: black;
+    color: $buttonAE;
   }
 
   .dropdown-list {
     display: none;
     position: absolute;
-    font-size: 1.5em;
+    font-size: 1.2em;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -91,7 +185,7 @@ header {
   }
 
   .dropdown-list a:-webkit-any-link:hover {
-    color: black;
+    color: $buttonAE;
   }
 }
 
@@ -103,8 +197,12 @@ header {
 // Icomoon SVGs
 // -------------------------------------------------------------------------------
 .icomoon-svgs {
-  width: 1em;
   height: 1em;
+  width: 1em;
+
+  path {
+    fill: $buttonBE;
+  }
 }
 
 .caret {
