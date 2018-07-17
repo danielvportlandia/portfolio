@@ -59,8 +59,8 @@ export default class Header extends React.Component {
           </div>
         </nav>
 
-        <HamburgerMenuSVG className='icomoon-svgs menu-icon' onClick='void(0)'/>
-        <ul className='menu-list' onClick='void(0)'>
+        <HamburgerMenuSVG className='icomoon-svgs menu-icon'/>
+        <ul className='menu-list'>
           <li><Link to='/'>Home <HomeSVG className='icomoon-svgs'/></Link></li>
           <li><Link to='/about'>About <AboutMeSVG className='icomoon-svgs'/></Link></li>
           <li>
