@@ -15,7 +15,7 @@ class BackGround extends React.Component {
         </p>
         <section>
           <article>
-            <h2>Medical Coding Specialist <MedicalSVG/></h2>
+            <h2>Medical Coding Specialist <MedicalSVG className='icomoon-svgs'/></h2>
             <h3>September 2015 - January 2018</h3>
             <p>
               <a className='external-link' href='https://www.aapc.com/' target='_blank' rel='noopener noreferrer' >AAPC</a>, June 2016 <br/>
@@ -48,7 +48,7 @@ class BackGround extends React.Component {
             </p>
           </article>
           <article>
-            <h2>Revenue Cycle Specialist <MedicalSVG/></h2>
+            <h2>Revenue Cycle Specialist <MedicalSVG className='icomoon-svgs'/></h2>
             <h3>February 2014 - September 2015</h3>
             <p>
               My primary responsbility in this role was to identify the causes of medical claim 
@@ -67,7 +67,7 @@ class BackGround extends React.Component {
             </p>
           </article>
           <article>
-            <h2>Patient Care Coordinator <MedicalSVG/></h2>
+            <h2>Patient Care Coordinator <MedicalSVG className='icomoon-svgs'/></h2>
             <h3>February 2012 - February 2014</h3>
             <p>
               This was my entry point into the medical industry. I worked directly with patients 

@@ -1,3 +1,5 @@
+@import '../../style/vars';
+
 footer {
   display: flex;
   flex-direction: column;
@@ -10,6 +12,10 @@ footer {
 
     svg {
       margin: 0.5em 0.5em;
+
+      path {
+        fill: $buttonAE;
+      }
     }
   }
 }

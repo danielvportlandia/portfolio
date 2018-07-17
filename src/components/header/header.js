@@ -13,6 +13,7 @@ import RS_SVG from '../../icomoon/SVG/gift.svg';
 import LeafSVG from '../../icomoon/SVG/leaf.svg';
 import MedicalSVG from '../../icomoon/SVG/aid-kit.svg';
 import EducationSVG from '../../icomoon/SVG/embed2.svg';
+import HamburgerMenuSVG from '../../icomoon/SVG/menu.svg';
 
 import './header.scss';
 
@@ -29,7 +30,7 @@ export default class Header extends React.Component {
           </div>
           <div className='dropdown'>
             <button className='dropbutton'>
-              Projects <CaretSVG className='caret'/>
+              Projects <CaretSVG className='icomoon-svgs caret'/>
             </button>
             <div className='dropdown-list'>
               <Link to='/redeeming-soles-project'>Redeeming Soles <RS_SVG className='icomoon-svgs'/></Link>
@@ -43,7 +44,7 @@ export default class Header extends React.Component {
         <nav className='nav-right'>
           <div className='dropdown'>
             <button className='dropbutton'>
-              Qualifications <CaretSVG className='caret'/>
+              Qualifications <CaretSVG className='icomoon-svgs caret'/>
             </button>
             <div className='dropdown-list'>
               <Link to='/background'>Background <MedicalSVG className='icomoon-svgs'/></Link>
@@ -57,6 +58,22 @@ export default class Header extends React.Component {
             <button className='link-button'><Link to='/contact'>Contact <ContactSVG className='icomoon-svgs'/></Link></button>
           </div>
         </nav>
+
+        <HamburgerMenuSVG className='icomoon-svgs menu-icon' onClick='void(0)'/>
+        <ul className='menu-list' onClick='void(0)'>
+          <li><Link to='/'>Home <HomeSVG className='icomoon-svgs'/></Link></li>
+          <li><Link to='/about'>About <AboutMeSVG className='icomoon-svgs'/></Link></li>
+          <li>
+            <Link to='/redeeming-soles-project'>Redeeming Soles <RS_SVG className='icomoon-svgs'/>
+            </Link>
+          </li>
+          <li><Link to='/bloomio-project'>Bloomio <LeafSVG className='icomoon-svgs'/></Link></li>
+          <li><Link to='/background'>Background <MedicalSVG className='icomoon-svgs'/></Link></li>
+          <li><Link to='/education'>Education <EducationSVG className='icomoon-svgs'/></Link></li>
+          <li><Link to='/resume'>Resume <ResumeSVG className='icomoon-svgs'/></Link></li>
+          <li><Link to='/contact'>Contact <ContactSVG className='icomoon-svgs'/></Link></li>
+        </ul>
+
       </header>
     );
   }

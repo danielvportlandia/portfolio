@@ -16,9 +16,29 @@ $max-width: 900px;
 // -------------------------------------------------------------------------
 // COLORS
 // -------------------------------------------------------------------------
-$buttonBE: #3e87ec;
-$buttonAE: #a33eec;
+$background: #252627;
+$buttonBE: #08fdd8;
+$buttonAE: #fc0853;
 $off-white: rgb(250, 250, 250);
 $selectable: #8e8e8b;
 $shadow: #969696;
+$opaque: rgba(250, 250, 250, 0.2);
 $heroku-purple: #6762a6;
+
+// -------------------------------------------------------------------------
+// MEDIA QUERIES
+// -------------------------------------------------------------------------
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 320px;
+$screen-sm-max: 767px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+$screen-md-max: 991px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;

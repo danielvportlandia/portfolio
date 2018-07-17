@@ -1,0 +1,30 @@
+@import 'vars';
+
+// Small devices (small tablets and large smartphones (landscape view))
+@mixin sm {
+  @media (max-width: #{$screen-sm-max}) {
+    @content;
+  }
+}
+
+// Medium devices (small tablets (portrait view))
+@mixin md {
+  @media (min-width: #{$screen-md-min})
+  and (max-width: #{$screen-md-max}) {
+      @content;
+  }
+}
+
+// Large devices (tablets and small desktops)
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+      @content;
+  }
+}
+
+// Extra large devices (large tablets and desktops)
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+      @content;
+  }
+}

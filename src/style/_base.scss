@@ -8,8 +8,9 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background: linear-gradient(#e58748, #e5bb48, #e5e548, #73cdc8, #78cd73, #c0cd73);
+  background-color: $background;
   background-size: cover;
+  color: $off-white;
   font-family: $poppins;
   text-align: center;
   width:100%;
@@ -32,6 +33,7 @@ input {
 // TYPOGRAPHY STYLING FOR HERO TEXT AT THE TOP OF EACH PAGE
 // -------------------------------------------------------------------------------------------------
 .hero-text {
+  color: $buttonBE;
   font-size: 3em;
   line-height: 1.2;
   margin: 4em auto 2em auto;
@@ -39,12 +41,16 @@ input {
 
 .external-link {
   text-decoration: none;
-  color: $selectable;
+  color: $buttonBE;
   font-weight: 400;
 
   &:hover {
-    color: $off-white;
+    color: $buttonAE;
   }
+}
+
+strong {
+  color: $buttonAE;
 }
 
 // -------------------------------------------------------------------------------------------------
@@ -142,6 +148,6 @@ $colors: (
 @each $button, $color in $colors {
   .#{$button} {
     --color: #{$color};
-    --hover: #{adjust-hue($color, 60deg)};
+    --hover: #{adjust-hue($color, 180deg)};
   }
 }
