@@ -33,7 +33,7 @@ export default class App extends React.Component {
             <Favicon url={favicon}/>
             <meta name='viewport' content='width=device-width, initial-scale=1.0' />
             <Header/>
-            {/* <Route path='*' component={AuthRedirect}/> */}
+            <Route path='*' component={AuthRedirect}/>
             <Route exact path={ROUTES.LANDING} component={Landing}/>
             <Route exact path={ROUTES.RESUME} component={Resume}/>
             <Route exact path={ROUTES.ABOUT} component={About}/>
