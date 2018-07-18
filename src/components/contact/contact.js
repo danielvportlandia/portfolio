@@ -9,7 +9,7 @@ class Contact extends React.Component {
   render() {
     return (
       <div className='contact-page'>
-        <img src={roundProfilePic}/>
+        <img src={roundProfilePic} alt='Clean-shaven profile pic of me' title='Clean-shaven profile pic of me'/>
         <p className='hero-text'>
           If you liked what you&apos;ve seen so far? You can find me here.
         </p>
@@ -18,6 +18,7 @@ class Contact extends React.Component {
           { /* GITHUB SVG */ }
           <a href='https://github.com/danielvportlandia' target='_blank' rel='noopener noreferrer'>
             <svg viewBox="0 0 256 259.3" className='other-svgs' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+              <title>https://github.com/danielvportlandia</title>
               <g>
                 <path fill="#9EDCF2" d="M200.9,199.8c0,13.9-32.2,25.1-71.9,25.1c-39.7,0-71.9-11.3-71.9-25.1c0-13.9,32.2-25.1,71.9-25.1C168.7,174.7,200.9,185.9,200.9,199.8L200.9,199.8z M200.9,199.8" />
                 <g>
@@ -54,6 +55,7 @@ class Contact extends React.Component {
           { /* LINKEDIN SVG */ }
           <a href='https://www.linkedin.com/in/daniel-w-shelton/' target='_blank' rel='noopener noreferrer'>
             <svg viewBox="0 0 512 130" className='other-svgs' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+              <title>https://www.linkedin.com/in/daniel-w-shelton</title>
               <g>
                 <path d="M0,19.1635571 L19.9868963,19.1635571 L19.9868963,91.9683374 L56.9975677,91.9683374 L56.9975677,110.411135 L0,110.411135 L0,19.1635571" fill="#1A1918"></path>
                 <path d="M75.4304675,17.8111213 C81.5825659,17.8111213 86.5756907,22.804246 86.5756907,28.9509455 C86.5756907,35.1075431 81.5825659,40.0889701 75.4304675,40.0889701 C69.2846678,40.0889701 64.2915431,35.1075431 64.2915431,28.9509455 C64.2915431,22.804246 69.2846678,17.8111213 75.4304675,17.8111213 L75.4304675,17.8111213 Z M65.8239438,48.5509174 L85.0369912,48.5509174 L85.0369912,110.38774 L65.8239438,110.38774 L65.8239438,48.5509174 Z" fill="#1A1918"></path>

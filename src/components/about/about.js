@@ -41,7 +41,7 @@ class About extends React.Component {
           </p>
           <p>
             I am currently free-lancing in the Greater Seattle Area but am 
-            <Link to={ROUTES.CONTACT} className='external-link'><strong> available for FTE</strong></Link>. If you are at all 
+            <Link to={ROUTES.CONTACT} className='external-link'> available for FTE</Link>. If you are at all 
             interested in hiring an incredibly smart, hilarious, hard-working, but most of all
             <strong> humble</strong> employee, then please click the link below to see my resumé.
           </p>

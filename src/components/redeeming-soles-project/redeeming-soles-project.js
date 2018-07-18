@@ -27,7 +27,7 @@ class RSProject extends React.Component {
           providing proper footwear to underpriviledged men, women, and children throughout 
           the Pacific Northwest. <br/>
           <br/>
-          Their No <a className='external-link' href='' target='_blank' rel='noopener noreferrer'>Kids Left On The Sidelines</a> program helps provide a firm foundation for at-risk youths to stand on by providing shoes and athletic gear to any child in need.
+          Their <a className='external-link' href='https://redeemingsoles.org/programs/no-kids-left-on-the-sidelines' target='_blank' rel='noopener noreferrer'>No Kids Left On The Sidelines</a> program helps provide a firm foundation for at-risk youths to stand on by providing shoes and athletic gear to any child in need.
         </p>
 
         <section>
