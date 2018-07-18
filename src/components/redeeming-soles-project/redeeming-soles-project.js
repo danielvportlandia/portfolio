@@ -261,7 +261,7 @@ class RSProject extends React.Component {
             SASS
             </li>
             <li><strong>Roles:</strong><br/>
-            Solution Architect <br/>
+            Lead Back-End Developer <br/>
             TDD Engineer <br/>
             UX Designer <br/>
             </li>
