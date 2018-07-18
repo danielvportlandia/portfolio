@@ -5,7 +5,7 @@ import Favicon from 'react-favicon';
 // -------------------------------------------------------------------------------------------------
 // CONSTANT COMPONENT IMPORTS
 // -------------------------------------------------------------------------------------------------
-import favicon from '../../assets/my-favicon.png';
+import favicon from '../../assets/site-favicon.png';
 import ScrollToTop from '../scroll-to-top/scroll-to-top';
 import AuthRedirect from '../auth-redirect/auth-redirect';
 import Header from '../header/header';
@@ -32,8 +32,12 @@ export default class App extends React.Component {
           <ScrollToTop>
             <Favicon url={favicon}/>
             <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+            <meta property="og:title" content="Daniel Shelton: Portfolio" />
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="http://daniel-shelton.com" />
+            <meta property="og:image" content="../../assets/site-preview.png" />
             <Header/>
-            {/* <Route path='*' component={AuthRedirect}/> */}
+            <Route path='*' component={AuthRedirect}/>
             <Route exact path={ROUTES.LANDING} component={Landing}/>
             <Route exact path={ROUTES.RESUME} component={Resume}/>
             <Route exact path={ROUTES.ABOUT} component={About}/>
