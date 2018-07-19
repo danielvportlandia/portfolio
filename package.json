@@ -7,7 +7,7 @@
     "pack": "webpack --config webpack.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack-dev-server --config webpack.dev.js",
-    "heroku-postbuild": "webpack --progress --config webpack.prod.js",
+    "postbuild": "react-snap",
     "start": "node index.js"
   },
   "repository": {
@@ -61,6 +61,7 @@
     "html-webpack-exclude-empty-assets-plugin": "^0.1.1",
     "react-favicon": "0.0.14",
     "react-helmet": "^5.2.0",
-    "react-pdf-js": "^4.0.0-alpha.6"
+    "react-pdf-js": "^4.0.0-alpha.6",
+    "react-snap": "^1.15.0"
   }
 }
