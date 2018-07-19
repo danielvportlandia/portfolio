@@ -1,7 +1,6 @@
 'use strict';
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
 
 const webpackConfig = module.exports = {};
 
@@ -10,7 +9,6 @@ webpackConfig.entry = `${__dirname}/src/main.js`;
 webpackConfig.output = {
   filename: '[name].[hash].js',
   path: `${__dirname}/build`,
-  libraryTarget: 'js',
 };
 
 webpackConfig.plugins = [
@@ -49,12 +47,7 @@ webpackConfig.module.rules = [
       loader: 'babel-loader',
       options: {
         presets: ['env', 'stage-0', 'react'],
-        plugins: [
-          'transform-react-jsx-source',
-          new StaticSiteGeneratorPlugin({
-            crawl: true,
-          }),
-        ],
+        plugins: ['transform-react-jsx-source'],
         cacheDirectory: true,
       },
     },
