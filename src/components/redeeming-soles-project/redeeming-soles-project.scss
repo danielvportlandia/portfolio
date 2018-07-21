@@ -43,9 +43,32 @@
     margin: 0;
   }
 
-  .opening-text {
-    font-size: 2em;
+  .project-opener {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
     margin: 3em auto;
+
+    .opening-text {
+      font-size: 2em;
+      margin: 3em auto;
+      width: 60%;
+    }
+
+    ul {
+      background-color: rgba(250, 250, 250, 0.2);
+      border-radius: 3px;
+      list-style: none;
+      max-height: 80%;
+      max-width: 15%;
+      min-width: 30%;
+      width: 30%;
+
+      li {
+        margin: 1em;
+      }
+    }
   }
 
   section {
@@ -95,6 +118,7 @@
     .article-text {
       font-size: 1em;
       margin: 1em auto;
+      min-width: 300px;
       text-align: center;
     }
   }
@@ -111,6 +135,7 @@
 
       img {
         box-shadow: 3px 3px 4px $selectable;
+        max-width: 600px;
       }
 
       figcaption {
