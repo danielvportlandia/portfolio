@@ -1,9 +1,15 @@
 @import '../../style/vars';
+@import '../../style/mixins';
 
 .about-page {
   line-height: 2em;
   margin: 2em auto;
   width: 600px;
+
+  @include sm {
+    width: 95%;
+    margin: 2em 0.5em;
+  }
   
   h1 {
     margin: 6em 0 1em 0;
