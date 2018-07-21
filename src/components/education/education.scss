@@ -1,13 +1,23 @@
 @import '../../style/vars';
+@import '../../style/mixins';
 
 .education-page {
   line-height: 2em;
   margin: 2em auto;
   width: 80%;
 
-  img {
+  @include sm {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-image {
     margin-bottom: 6em;
     max-width: 800px;
+
+    @include sm {
+      max-width: 95%;
+    }
   }
   
   .scrolling-wrapper-flexbox {
@@ -17,6 +27,10 @@
     height: 800px;
     margin-bottom: 3em;
     min-width: 1110px;
+
+    @include sm {
+      display: none;
+    }
     
     .card {
       flex: 0 0 auto;
@@ -72,6 +86,7 @@
             width: 90%;
             height: auto;
             margin: 0 2em;
+            max-width: 800px;
             min-width: 0;
           }
 
@@ -106,4 +121,27 @@
   justify-content: space-evenly;
   align-items: center;
   margin-bottom: 2em;     
+}
+
+.mobile-story-view {
+  display: none;
+
+  @include sm {
+    display: block;
+  }
+
+  .story {
+    @include sm {
+      margin-bottom: 10em;
+    }
+    p {
+      @include sm {
+        max-width: 95%;
+      }
+    }
+
+    .mobile-image {
+      width: 100%;
+    }
+  }
 }

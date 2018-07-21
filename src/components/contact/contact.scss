@@ -1,4 +1,5 @@
 @import '../../style/vars';
+@import '../../style/mixins';
 
 .contact-page {
   img {
@@ -8,6 +9,10 @@
     float: none;
     margin: 6em auto 2em auto;
     width: 10em;
+
+    @include sm {
+      margin: 8em auto 2em auto;
+    }
   }
 
   p {
@@ -25,6 +30,10 @@
     
     svg {
       width: 10em;
+
+      @include sm {
+        margin: 0;
+      }
     }
   }
 }

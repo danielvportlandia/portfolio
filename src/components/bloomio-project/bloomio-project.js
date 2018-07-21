@@ -3,8 +3,12 @@ import React from 'react';
 import bloomioDiagramImg from '../../assets/bloomio-schema-diagram.jpg';
 import bloomioTestingImg from '../../assets/bloomio-testing.jpg';
 import bloomioCactiImg from '../../assets/bloomio-cacti.jpg';
+
+import IdeaSVG from '../../icomoon/SVG/accessibility.svg';
+import PlanningSVG from '../../icomoon/SVG/pencil2.svg';
 import DebugSVG from '../../icomoon/SVG/bug.svg';
 import UserSVG from '../../icomoon/SVG/user.svg';
+import PrototypeSVG from '../../icomoon/SVG/joomla.svg';
 
 import './bloomio-project.scss';
 
@@ -17,13 +21,37 @@ class BloomioProject extends React.Component {
           <h2>Bloomio</h2>
         </div>
 
-        <p className='opening-text'>
-          <a className='external-link' href='https://github.com/Bloomio/Bloomio-backend/blob/master/README.md' target='_blank' rel='noopener noreferrer'>Bloomio</a> is a plant management API which users can use to store all their individual plants in their &quot;planter box&quot; where watering updates are provided based on the plant&apos;s watering schedule, season, and last watered date.
-        </p>
+        <div className='project-opener'>
+          <p className='opening-text'>
+            <a className='external-link' href='https://github.com/Bloomio/Bloomio-backend/blob/master/README.md' target='_blank' rel='noopener noreferrer'>Bloomio</a> is a plant management API which users can use to store all their individual plants in their &quot;planter box&quot; where watering updates are provided based on the plant&apos;s watering schedule, season, and last watered date.
+          </p>
+
+          { /* Project Details */}
+          <ul>
+            <li><strong>Tools:</strong><br/>
+              Travis CI, Jest, <br/>
+              Artillery.io, Twilio, <br/>
+              AWS&apos;s S3
+            </li>
+            <li><strong>Skills:</strong><br/>
+              MongoDB with Mongoose, <br/>
+              Node.js & Express, <br/>
+              Moment.js
+            </li>
+            <li><strong>Roles:</strong><br/>
+              Visionary <br/>
+              Back-End Developer <br/>
+              TDD Engineer <br/>
+            </li>
+            <li><strong>Timeline:</strong><br/>
+              1 week (Prototype)
+            </li>
+          </ul>
+        </div>
 
         <section>
           <article>
-            <h4>Idea Origins</h4>
+            <h4>Idea Origins <IdeaSVG className='icomoon-svgs'/></h4>
             <div className='article-details-wrapper'>
             
               <div className='article-text-wrapper'>
@@ -54,7 +82,7 @@ class BloomioProject extends React.Component {
 
         <section>
           <article>
-            <h4>Planning</h4>
+            <h4>Planning <PlanningSVG className='icomoon-svgs'/></h4>
             <div className='article-details-wrapper'>
 
               <div className='article-text-wrapper'>
@@ -115,7 +143,7 @@ class BloomioProject extends React.Component {
 
         <section>
           <article>
-          <h4>Project Details</h4>
+          <h4>Project Details <PrototypeSVG className='icomoon-svgs'/></h4>
             <div className='article-details-wrapper'>
 
               <div className='article-text-wrapper'>
@@ -153,29 +181,6 @@ class BloomioProject extends React.Component {
             </div>
           </article>
         </section>
-
-        <aside>
-          <ul>
-            <li><strong>Tools:</strong><br/>
-            Travis CI, Jest, <br/>
-            Artillery.io, Twilio, <br/>
-            AWS&apos;s S3
-            </li>
-            <li><strong>Skills:</strong><br/>
-            MongoDB with Mongoose, <br/>
-            Node.js & Express, <br/>
-            Moment.js
-            </li>
-            <li><strong>Roles:</strong><br/>
-            Visionary <br/>
-            Back-End Developer <br/>
-            TDD Engineer <br/>
-            </li>
-            <li><strong>Timeline:</strong><br/>
-            1 week (Prototype)
-            </li>
-          </ul>
-        </aside>
 
         <a href='https://github.com/Bloomio/Bloomio-backend/blob/master/README.md' target='_blank' rel='noopener noreferrer'>
           <button className='raise'>CHECKOUT THE PROJECT ON GITHUB</button>

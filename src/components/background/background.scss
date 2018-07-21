@@ -1,9 +1,15 @@
 @import '../../style/vars';
+@import '../../style/mixins';
 
 .background-page {
   line-height: 2em;
   width: 600px;
   margin: 2em auto;
+
+  @include sm {
+    width: 95%;
+    margin: 2em 0.5em;
+  }
 
   h1 {
     margin: 6em auto;

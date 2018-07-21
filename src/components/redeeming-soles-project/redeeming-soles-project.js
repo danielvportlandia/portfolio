@@ -8,8 +8,11 @@ import profileFormImg from '../../assets/rs-profile-form.jpg';
 import userFormImg from '../../assets/rs-user-form.jpg';
 import adminFormImg from '../../assets/rs-admin-form.jpg';
 
+import ClientSVG from '../../icomoon/SVG/bubbles3.svg';
+import PlanningSVG from '../../icomoon/SVG/pencil2.svg';
 import DebugSVG from '../../icomoon/SVG/bug.svg';
 import UserSVG from '../../icomoon/SVG/user.svg';
+import PrototypeSVG from '../../icomoon/SVG/joomla.svg';
 import './redeeming-soles-project.scss';
 
 class RSProject extends React.Component {
@@ -22,17 +25,42 @@ class RSProject extends React.Component {
           <h3>A REDEEMING SOLES INITIATIVE</h3>
         </div>
 
-        <p className='opening-text'>
-          <a className='external-link' href='https://redeemingsoles.org/' target='_blank' rel='noopener noreferrer'>Redeeming Soles</a> is a Seattle-based non-profit organization who is committed to 
-          providing proper footwear to underpriviledged men, women, and children throughout 
-          the Pacific Northwest. <br/>
-          <br/>
-          Their <a className='external-link' href='https://redeemingsoles.org/programs/no-kids-left-on-the-sidelines' target='_blank' rel='noopener noreferrer'>No Kids Left On The Sidelines</a> program helps provide a firm foundation for at-risk youths to stand on by providing shoes and athletic gear to any child in need.
-        </p>
+        <div className='project-opener'>
+          <p className='opening-text'>
+            <a className='external-link' href='https://redeemingsoles.org/' target='_blank' rel='noopener noreferrer'>Redeeming Soles</a> is a Seattle-based non-profit organization who is committed to 
+            providing proper footwear to underpriviledged men, women, and children throughout 
+            the Pacific Northwest. <br/>
+            <br/>
+            Their <a className='external-link' href='https://redeemingsoles.org/programs/no-kids-left-on-the-sidelines' target='_blank' rel='noopener noreferrer'>No Kids Left On The Sidelines</a> program helps provide a firm foundation for at-risk youths to stand on by providing shoes and athletic gear to any child in need.
+          </p>
+
+          { /* Project Details */}
+          <ul>
+            <li><strong>Tools:</strong><br/>
+              Travis CI, Jest, Artillery.io, <br/>
+              Webpack, Heroku, <br/>
+              Trello
+            </li>
+            <li><strong>Skills:</strong><br/>
+              React with Redux, <br/>
+              MongoDB with Mongoose, <br/>
+              Node.js & Express, <br/>
+              SASS
+            </li>
+            <li><strong>Roles:</strong><br/>
+              Lead Back-End Developer <br/>
+              TDD Engineer <br/>
+              UX Designer <br/>
+            </li>
+            <li><strong>Timeline:</strong><br/>
+              1 week (Prototype)
+            </li>
+          </ul>
+        </div>
 
         <section>
           <article>
-            <h4>Meeting with the Client</h4>
+            <h4>Meeting with the Client <ClientSVG className='icomoon-svgs'/></h4>
             <div className='article-text-wrapper'>
               <p className='article-text'>
                 For my final project in <strong>Code Fellows</strong>, my team and I wanted 
@@ -57,7 +85,7 @@ class RSProject extends React.Component {
 
         <section>
           <article>
-            <h4>Planning</h4>
+            <h4>Planning <PlanningSVG className='icomoon-svgs'/></h4>
             <div className='article-details-wrapper'>
 
               <div className='article-text-wrapper'>
@@ -70,12 +98,6 @@ class RSProject extends React.Component {
                   <UserSVG className='icomoon-svgs'/> As a warehouse employee, I want a simple inventory input form for shoes. <br/>
                   <UserSVG className='icomoon-svgs'/> I want to be immediately notified if the pair of shoes I&apos;m inputting has been requested so that I may distribute them quickly. <br/>
                 </p>
-                {/* <p className='article-text'>
-                  <strong>Wireframing:</strong><br/>
-                  I quickly got to sketching out the back-end functionality of the application 
-                  while focusing on how our system can be integrated into their current warehouse 
-                  distribution system.
-                </p> */}
                 <p className='article-text'>
                   <strong>MVP:</strong><br/>
                   As the time-frame for a working prototype was only 1 week, I had to appropriately 
@@ -178,7 +200,7 @@ class RSProject extends React.Component {
 
         <section>
           <article>
-          <h4>Prototype Specs</h4>
+          <h4>Prototype Specs <PrototypeSVG className='icomoon-svgs'/></h4>
             <div className='article-details-wrapper'>
 
               <div className='article-text-wrapper'>
@@ -246,30 +268,6 @@ class RSProject extends React.Component {
             </div>
           </article>
         </section>
-
-        <aside>
-          <ul>
-            <li><strong>Tools:</strong><br/>
-            Travis CI, Jest, Artillery.io, <br/>
-            Webpack, Heroku, <br/>
-            Trello
-            </li>
-            <li><strong>Skills:</strong><br/>
-            React with Redux, <br/>
-            MongoDB with Mongoose, <br/>
-            Node.js & Express, <br/>
-            SASS
-            </li>
-            <li><strong>Roles:</strong><br/>
-            Lead Back-End Developer <br/>
-            TDD Engineer <br/>
-            UX Designer <br/>
-            </li>
-            <li><strong>Timeline:</strong><br/>
-            1 week (Prototype)
-            </li>
-          </ul>
-        </aside>
         <a href='https://redeeming-soles-front.herokuapp.com/login' target='_blank' rel='noopener noreferrer'>
           <button className='raise'>CHECK OUT THE PROTOTYPE</button>
         </a>
