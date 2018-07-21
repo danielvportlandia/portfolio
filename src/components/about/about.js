@@ -22,7 +22,7 @@ class About extends React.Component {
           <p>
             What really gets me excited though is <strong>being able to turn a client&apos;s 
             dream into a reality. </strong>I am always looking forward to taking on new challenges 
-            and finding opportunities that let me create meaningful products that enriches the 
+            and finding opportunities that let me create meaningful products that enrich the 
             lives of others.
           </p>
           <p>
@@ -37,7 +37,7 @@ class About extends React.Component {
             My passion for coding stemmed from my love of writing; being able to leave 
             lasting impressions with others through my writing is what ultimately led me to switch 
             careers to software development, where I have been able to do the same thing, but 
-            instead, through the sites I&apos;ve helped create instead.
+            instead, through the sites I&apos;ve helped create.
           </p>
           <p>
             I am currently free-lancing in the Greater Seattle Area but am 
