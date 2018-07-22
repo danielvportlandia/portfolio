@@ -11,7 +11,7 @@ class Contact extends React.Component {
       <div className='contact-page fade-in'>
         <img src={roundProfilePic} alt='Clean-shaven profile pic of me' title='Clean-shaven profile pic of me'/>
         <p className='hero-text'>
-          If you liked what you&apos;ve seen so far? You can find me here.
+          Like what you&apos;ve seen so far? You can find me here.
         </p>
         <div className='contact-svg-wrapper'>
 
