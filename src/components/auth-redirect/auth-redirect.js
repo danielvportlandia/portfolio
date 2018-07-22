@@ -4,7 +4,21 @@ import ROUTES from '../../routes';
 
 class AuthRedirect extends React.Component {
   render() {
-    const destinationRoute = ROUTES.LANDING;
+    let destinationRoute = null;
+    const { pathname } = location; //eslint-disable-line
+
+    if (
+      pathname !== ROUTES.ABOUT
+      && pathname !== ROUTES.LANDING
+      && pathname !== ROUTES.RS_PROJECT
+      && pathname !== ROUTES.BLOOMIO_PROJECT
+      && pathname !== ROUTES.BACKGROUND
+      && pathname !== ROUTES.EDUCATION
+      && pathname !== ROUTES.RESUME
+      && pathname !== ROUTES.CONTACT
+    ) {
+      destinationRoute = ROUTES.LANDING;
+    }
     
     return (
       <div>
@@ -13,7 +27,5 @@ class AuthRedirect extends React.Component {
     );
   }
 }
-
-// TODO: Fix redirect error for redirecting to same page (console log error)
 
 export default AuthRedirect;
