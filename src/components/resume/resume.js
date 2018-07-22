@@ -9,7 +9,7 @@ import './resume.scss';
 class Resume extends React.Component {
   render() {
     return (
-      <div className='resume-page'>
+      <div className='resume-page fade-in'>
         <a 
         href={require('./daniel-shelton-resume.pdf')} download='daniel-shelton-resume'
         >

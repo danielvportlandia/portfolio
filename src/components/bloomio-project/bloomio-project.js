@@ -15,7 +15,7 @@ import './bloomio-project.scss';
 class BloomioProject extends React.Component {
   render() {
     return (
-      <div className='bloomio-project-page'>
+      <div className='bloomio-project-page fade-in'>
         
         <div className='banner-wrapper'>
           <h2>Bloomio</h2>

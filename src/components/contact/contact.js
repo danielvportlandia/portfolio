@@ -8,7 +8,7 @@ import './contact.scss';
 class Contact extends React.Component {
   render() {
     return (
-      <div className='contact-page'>
+      <div className='contact-page fade-in'>
         <img src={roundProfilePic} alt='Clean-shaven profile pic of me' title='Clean-shaven profile pic of me'/>
         <p className='hero-text'>
           If you liked what you&apos;ve seen so far? You can find me here.

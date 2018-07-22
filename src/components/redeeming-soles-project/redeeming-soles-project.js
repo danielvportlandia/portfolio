@@ -18,7 +18,7 @@ import './redeeming-soles-project.scss';
 class RSProject extends React.Component {
   render() {
     return (
-      <div className='rs-project-page'>
+      <div className='rs-project-page fade-in'>
 
         <div className='banner-wrapper'>
           <h2>No Kids Left On The Sidelines</h2>

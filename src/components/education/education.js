@@ -6,7 +6,7 @@ import ROUTES from '../../routes';
 // -------------------------------------------------------------------------------------------------
 // IMAGE IMPORTS
 // -------------------------------------------------------------------------------------------------
-import CFBannerImg from '../../assets/CF-logo-transparent.png';
+import CFBannerImg from '../../assets/CF-logo.png';
 import CFWallImg from '../../assets/CF-wall.jpg';
 import vanillaJSImg from '../../assets/vanilla-javascript.jpg';
 import agileImg from '../../assets/agile-development.jpg';
@@ -17,7 +17,7 @@ import './education.scss';
 class Education extends React.Component {
   render() {
     return (
-      <div className='education-page'>
+      <div className='education-page fade-in'>
         <p className='hero-text'>Let me tell you about my education from</p>
         <a href='https://www.codefellows.org' target='_blank' rel='noopener noreferrer'>
           <img src={CFBannerImg} className='hero-image' alt='Check out Code Fellows' title='Check out Code Fellows' target='_blank' rel='noopener noreferrer'/>
