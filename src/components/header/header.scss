@@ -99,8 +99,7 @@ header {
   user-select: none;
 
   &:hover ~ .menu-list{
-    display: block;
-    float: left;
+    height: 480px;
   }
 
   @include sm {
@@ -111,6 +110,12 @@ header {
     top: 0;
     right: 0;
   }
+}
+
+.menu-list {
+  height: 0;
+  transition: height 0.3s linear;
+  transition-delay: 0.2s;
 }
 
 // -------------------------------------------------------------------------------
