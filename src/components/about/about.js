@@ -8,7 +8,7 @@ import './about.scss';
 class About extends React.Component {
   render() {
     return (
-      <div className='about-page'>
+      <div className='about-page fade-in'>
         <p className='hero-text'>A little bit about me first.</p>
         <img src={profilePic} alt='My loving family and I' title='My loving family and I'/>
         <section className='bio'>

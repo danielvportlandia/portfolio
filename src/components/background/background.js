@@ -8,7 +8,7 @@ import './background.scss';
 class BackGround extends React.Component {
   render() {
     return (
-      <div className='background-page'>
+      <div className='background-page fade-in'>
         <p className='hero-text'>
           I have 9+ years experience working in the medical industry where I held the 
           following titles:

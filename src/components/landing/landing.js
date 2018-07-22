@@ -6,7 +6,7 @@ import ROUTES from '../../routes';
 export default class Landing extends React.Component {
   render() {
     return (
-      <div className='landing-page'>
+      <div className='landing-page fade-in'>
         <p className='hero-text'>
           Daniel Shelton <br/> 
           is a Full-Stack JavaScript Developer in Seattle, Washington. <br/>
