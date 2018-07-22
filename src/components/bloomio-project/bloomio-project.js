@@ -17,7 +17,7 @@ class BloomioProject extends React.Component {
     return (
       <div className='bloomio-project-page fade-in'>
         
-        <div className='banner-wrapper'>
+        <div className='banner-wrapper parallax'>
           <h2>Bloomio</h2>
         </div>
 

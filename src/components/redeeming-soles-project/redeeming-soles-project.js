@@ -20,7 +20,7 @@ class RSProject extends React.Component {
     return (
       <div className='rs-project-page fade-in'>
 
-        <div className='banner-wrapper'>
+        <div className='banner-wrapper parallax'>
           <h2>No Kids Left On The Sidelines</h2>
           <h3>A REDEEMING SOLES INITIATIVE</h3>
         </div>
