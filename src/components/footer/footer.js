@@ -1,7 +1,7 @@
 import React from 'react';
 
-import GithubSVG from '../../icomoon/SVG/github.svg';
-import LinkedinSVG from '../../icomoon/SVG/linkedin.svg';
+import GithubSVG from '../../lib/icomoon/github.svg';
+import LinkedinSVG from '../../lib/icomoon/linkedin.svg';
 
 import './footer.scss';
 

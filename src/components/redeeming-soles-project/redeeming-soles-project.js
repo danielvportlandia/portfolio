@@ -8,11 +8,11 @@ import profileFormImg from '../../assets/rs-profile-form.jpg';
 import userFormImg from '../../assets/rs-user-form.jpg';
 import adminFormImg from '../../assets/rs-admin-form.jpg';
 
-import ClientSVG from '../../icomoon/SVG/bubbles3.svg';
-import PlanningSVG from '../../icomoon/SVG/pencil2.svg';
-import DebugSVG from '../../icomoon/SVG/bug.svg';
-import UserSVG from '../../icomoon/SVG/user.svg';
-import PrototypeSVG from '../../icomoon/SVG/joomla.svg';
+import ClientSVG from '../../lib/icomoon/bubbles3.svg';
+import PlanningSVG from '../../lib/icomoon/pencil2.svg';
+import DebugSVG from '../../lib/icomoon/bug.svg';
+import UserSVG from '../../lib/icomoon/user.svg';
+import PrototypeSVG from '../../lib/icomoon/joomla.svg';
 import './redeeming-soles-project.scss';
 
 class RSProject extends React.Component {

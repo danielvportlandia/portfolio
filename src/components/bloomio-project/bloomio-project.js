@@ -4,11 +4,11 @@ import bloomioDiagramImg from '../../assets/bloomio-schema-diagram.jpg';
 import bloomioTestingImg from '../../assets/bloomio-testing.jpg';
 import bloomioCactiImg from '../../assets/bloomio-cacti.jpg';
 
-import IdeaSVG from '../../icomoon/SVG/accessibility.svg';
-import PlanningSVG from '../../icomoon/SVG/pencil2.svg';
-import DebugSVG from '../../icomoon/SVG/bug.svg';
-import UserSVG from '../../icomoon/SVG/user.svg';
-import PrototypeSVG from '../../icomoon/SVG/joomla.svg';
+import IdeaSVG from '../../lib/icomoon/accessibility.svg';
+import PlanningSVG from '../../lib/icomoon/pencil2.svg';
+import DebugSVG from '../../lib/icomoon/bug.svg';
+import UserSVG from '../../lib/icomoon/user.svg';
+import PrototypeSVG from '../../lib/icomoon/joomla.svg';
 
 import './bloomio-project.scss';
 
