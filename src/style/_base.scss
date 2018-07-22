@@ -68,11 +68,13 @@ strong {
 // SVG STYLING
 // -------------------------------------------------------------------------------------------------
 .devicon-svg {
+  max-height: 10em;
   width: 7em;
 }
 
 .other-svgs {
   margin:  0 1em;
+  max-height: 10em;
   width: 5em;
 }
 
