@@ -4,7 +4,7 @@
   "description": "My professional portfolio, please feel free to take a look.",
   "main": "index.js",
   "engines": {
-    "node": "9.11.1"
+    "node": "10.7.0"
   },
   "scripts": {
     "pack": "webpack --config webpack.prod.js",

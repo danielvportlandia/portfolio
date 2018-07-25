@@ -3,17 +3,17 @@
 
 .background-page {
   line-height: 2em;
-  width: 600px;
   margin: 2em auto;
+  width: 600px;
 
   @include sm {
-    width: 95%;
     margin: 2em 0.5em;
+    width: 95%;
   }
 
   h1 {
-    margin: 6em auto;
     line-height: 1.5;
+    margin: 6em auto;
   }
 
   h2 {
@@ -21,14 +21,14 @@
   }
 
   h3 {
-    margin-top: 0;
-    font-size: 1em;
     color: $off-white;
+    font-size: 1em;
+    margin-top: 0;
   }
 
   section {
-    text-align: left;
     margin-bottom: 3em;
+    text-align: left;
 
     article {
       margin-bottom: 6em;
