@@ -48,7 +48,7 @@ class Education extends React.Component {
         <a href='https://www.codefellows.org' target='_blank' rel='noopener noreferrer'>
           <img src={CFBannerImg} className='hero-image' alt='Check out Code Fellows' title='Check out Code Fellows' target='_blank' rel='noopener noreferrer'/>
         </a>
-        <Fade>
+        <Fade className='reveals'>
           <div className="scrolling-wrapper-flexbox">
             <section className="card">
               <div className='article-wrapper'>
@@ -85,8 +85,8 @@ class Education extends React.Component {
                         and <strong>Mongoose</strong>
                       </li>
                       <li>
-                        How to develop the back-end of applications with <strong>Node.js</strong> and
-                        <strong> Express</strong>
+                        How to develop the back-end of applications with <strong>Node.js </strong>
+                        and <strong>Express</strong>
                       </li>
                       <li>
                         How to debug applications by applying critical thinking skills towards
@@ -110,8 +110,8 @@ class Education extends React.Component {
                   </div>
                   <p>
                     This was my introduction to many CS concepts such as <strong>Object-Oriented 
-                    Programming (OOP), Document Object Model (DOM) Manipulation & Traversal</strong>, 
-                    and utilizing Version Control workflows with <strong>GitHub </strong>
+                    Programming (OOP), Document Object Model (DOM) Manipulation & Traversal
+                    </strong>, and utilizing Version Control workflows with <strong>GitHub </strong>
                     and <strong>Git</strong> to bring projects together.
                   </p>
                   <p>
@@ -161,9 +161,9 @@ class Education extends React.Component {
                     and <strong>Trello</strong> to keep in constant contact with teammates.
                   </p>
                   <p>
-                    At this point in our education we were introduced to <strong>NPM</strong> and the 
-                    concept of installing and managing dependencies in our code, and from there 
-                    things really picked up. The first library we were introduced to was
+                    At this point in our education we were introduced to <strong>NPM </strong> 
+                    and the concept of installing and managing dependencies in our code, and 
+                    from there things really picked up. The first library we were introduced to was
                     <strong> jQuery</strong> where we focused on DOM manipulation and 
                     making <strong>AJAX</strong> calls to external APIs.
                   </p>
@@ -200,8 +200,9 @@ class Education extends React.Component {
                     Th advanced JavaScript course started off by diving deep into working with
                     <strong> Node.js</strong> & <strong>Express</strong>. Before we could rely on 
                     Express for all of our server-side routing needs, we had to build our own TCP 
-                    server from scratch and fully understand concepts such as <strong>REST, CRUD, 
-                    and asynchronous programming</strong>.
+                    server from scratch and fully understand concepts such as 
+                    <strong> REST</strong>, <strong>CRUD</strong>, and
+                    <strong> asynchronous programming</strong>.
                   </p>
                   <p>
                     I utilized <strong>MongoDB</strong> & <strong>Mongoose</strong> to create 
@@ -241,11 +242,11 @@ class Education extends React.Component {
                     <h3>Mastering React</h3>
                   </div>
                   <p>
-                    I chose the 401 Full-Stack JavaScript track due to JavaScript&apos;s versatility 
-                    and close relationship with the browser, it was definitely the right call 
-                    for me as I fell in love with coding in <strong>React</strong> (with
-                    <strong> Redux</strong>) to quickly and efficiently develop user interfaces 
-                    and reusable components.
+                    I chose the 401 Full-Stack JavaScript track due to JavaScript&apos;s 
+                    versatility and close relationship with the browser, it was definitely the 
+                    right call for me as I fell in love with coding in <strong>React </strong> 
+                    (with <strong>Redux</strong>) to quickly and efficiently develop user 
+                    interfaces and reusable components.
                   </p>
                   <p>
                     I learned how to best utilize tools such as <strong>Webpack</strong> and 

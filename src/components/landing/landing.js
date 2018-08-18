@@ -10,7 +10,7 @@ export default class Landing extends React.Component {
         <p className='hero-text'>
           Daniel Shelton <br/> 
           is a Full-Stack JavaScript Developer in Seattle, Washington. <br/>
-          Passionate about UX design, data management, and delivering quality content.
+          Passionate about UX design, data analytics, and delivering quality content.
         </p>
         <Link to={ROUTES.ABOUT}>
           <button className='raise'>CLICK HERE TO GET TO KNOW ME</button>

@@ -109,7 +109,7 @@ strong {
   @include keyframes(fadeIn) { from { opacity:0; } to { opacity:1; } }
 }
 
-.fade-ins {
+.reveals {
   @include sm {
     overflow-x: hidden;
 

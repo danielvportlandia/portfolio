@@ -16,11 +16,11 @@ class BackGround extends React.Component {
         </p>
         <section>
           <article>
-            <Fade top className='fade-ins'>
+            <Fade top className='reveals'>
               <h2>Medical Coding Specialist <MedicalSVG className='icomoon-svgs wiggle'/></h2>
               <h3>September 2015 - January 2018</h3>
             </Fade>
-            <Fade left className='fade-ins'>
+            <Fade left className='reveals'>
               <p>
                 <a className='external-link' href='https://www.aapc.com/' target='_blank' rel='noopener noreferrer' >AAPC</a>, June 2016 <br/>
                 <strong>Certified Professional Coder</strong>
@@ -54,11 +54,11 @@ class BackGround extends React.Component {
             </Fade>
           </article>
           <article>
-            <Fade top className='fade-ins'>
+            <Fade top className='reveals'>
               <h2>Revenue Cycle Specialist <MedicalSVG className='icomoon-svgs wiggle'/></h2>
               <h3>February 2014 - September 2015</h3>
             </Fade>
-            <Fade right className='fade-ins'>
+            <Fade right className='reveals'>
               <p>
                 My primary responsbility in this role was to identify the causes of medical claim 
                 rejections and resolve them. There is a plethora of reasons a medical claim could 
@@ -77,11 +77,11 @@ class BackGround extends React.Component {
             </Fade>
           </article>
           <article>
-            <Fade top className='fade-ins'>
+            <Fade top className='reveals'>
               <h2>Patient Care Coordinator <MedicalSVG className='icomoon-svgs wiggle'/></h2>
               <h3>February 2012 - February 2014</h3>
             </Fade>
-            <Fade left className='fade-ins'>
+            <Fade left className='reveals'>
               <p>
                 This was my entry point into the medical industry. I worked directly with patients 
                 by checking them into their appointments and by routing them to the appropriate 
