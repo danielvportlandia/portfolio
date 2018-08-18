@@ -13,10 +13,10 @@ class About extends React.Component {
         <p className='hero-text'>A little bit about me first.</p>
         <img src={profilePic} alt='My loving family and I' title='My loving family and I'/>
         <section className='bio'>
-          <Fade top>
+          <Fade top className='fade-ins'>
             <h2>Hello, I&apos;m Daniel!</h2>
           </Fade>
-          <Fade left>
+          <Fade left className='fade-ins'>
             <p>
               I&apos;m a <strong>Full-Stack (MERN) JavaScript Developer</strong> and father to 
               one beautiful baby girl. I am passionate about both delivering an engaging and 
@@ -24,7 +24,7 @@ class About extends React.Component {
               functionality.
             </p>
           </Fade>
-          <Fade right>
+          <Fade right className='fade-ins'>
             <p>
               What really gets me excited though is <strong>being able to turn a client&apos;s 
               dream into a reality. </strong>I am always looking forward to taking on new 
@@ -33,13 +33,13 @@ class About extends React.Component {
               lives of others.
             </p> 
           </Fade>
-          <Fade left>
+          <Fade left className='fade-ins'>
             <p>
               Once I had decided to pivot my career from the medical industry into the tech 
               industry, I enrolled at <a className='external-link' href='https://www.codefellows.org' target='_blank' rel='noopener noreferrer'>Code Fellows</a>, where I earned my certificate in advanced software development with JavaScript. I learned not only how to develop applications but was also taught <strong> Agile methodologies, best coding practices, and how to collaborate with others.</strong>
             </p> 
           </Fade>
-          <Fade right>
+          <Fade right className='fade-ins'>
             <p>
               My passion for coding stemmed from my love of writing; being able to leave 
               lasting impressions with others through my writing is what ultimately led me to 
@@ -47,7 +47,7 @@ class About extends React.Component {
               thing, but instead, through the sites I&apos;ve helped create.
             </p> 
           </Fade>
-          <Fade left>
+          <Fade left className='fade-ins'>
             <p>
               I am currently free-lancing in the Greater Seattle Area but am 
               <Link to={ROUTES.CONTACT} className='external-link'> available for FTE</Link>. If you are at all 

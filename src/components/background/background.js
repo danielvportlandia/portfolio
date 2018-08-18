@@ -15,10 +15,12 @@ class BackGround extends React.Component {
           following titles:
         </p>
         <section>
-          <Fade top cascade>
-            <article>
+          <article>
+            <Fade top className='fade-ins'>
               <h2>Medical Coding Specialist <MedicalSVG className='icomoon-svgs wiggle'/></h2>
               <h3>September 2015 - January 2018</h3>
+            </Fade>
+            <Fade left className='fade-ins'>
               <p>
                 <a className='external-link' href='https://www.aapc.com/' target='_blank' rel='noopener noreferrer' >AAPC</a>, June 2016 <br/>
                 <strong>Certified Professional Coder</strong>
@@ -28,15 +30,15 @@ class BackGround extends React.Component {
                 <strong> abstracted</strong> CPT (current procedural terminology) codes by the 
                 medical, surgical, and/or diagnostic procedures and services provided per 
                 patient encounter.
-              </p>
+              </p> 
               <p>
                 I ensured the proper reporting of supplies used in procedures by adhering to the 
                 reporting policies for HCPCS (Healthcare Common Procedure Coding System).
-              </p>
+              </p>   
               <p>
                 I <strong> Exceeded</strong> industry-set data entry standards by both quantity 
                 and accuracy of claims submitted.
-              </p>
+              </p>      
               <p>
                 I performed quarterly Bell Curve audits on Physicians to mitigate documentation 
                 errors and to provide feedback to the Physician&apos;s regarding their billing 
@@ -48,13 +50,15 @@ class BackGround extends React.Component {
                 regarding those changes for both clinical staff (including the Physician&apos;s) 
                 as well as for the non-clinical staff such as our medical billers and other coding 
                 staff.
-              </p>
-            </article>
-          </Fade>
-          <Fade right>
-            <article>
+              </p>    
+            </Fade>
+          </article>
+          <article>
+            <Fade top className='fade-ins'>
               <h2>Revenue Cycle Specialist <MedicalSVG className='icomoon-svgs wiggle'/></h2>
               <h3>February 2014 - September 2015</h3>
+            </Fade>
+            <Fade right className='fade-ins'>
               <p>
                 My primary responsbility in this role was to identify the causes of medical claim 
                 rejections and resolve them. There is a plethora of reasons a medical claim could 
@@ -69,29 +73,31 @@ class BackGround extends React.Component {
                 I Advocated for our patients that dealt with improper insurance claim denials and 
                 assisted them in the appeals process to overturn their insurance&apos;s denial 
                 decisions.
-              </p>
-            </article>
-          </Fade>
-          <Fade left>
-            <article>
+              </p>  
+            </Fade>
+          </article>
+          <article>
+            <Fade top className='fade-ins'>
               <h2>Patient Care Coordinator <MedicalSVG className='icomoon-svgs wiggle'/></h2>
               <h3>February 2012 - February 2014</h3>
+            </Fade>
+            <Fade left className='fade-ins'>
               <p>
                 This was my entry point into the medical industry. I worked directly with patients 
                 by checking them into their appointments and by routing them to the appropriate 
                 staff based off the patient&apos;s need.
-              </p>
+              </p>      
               <p>
                 <strong>My work spoke for itself</strong> as I was quickly made into a trainer 
                 for onboarding new staff. 
-              </p>
+              </p>            
               <p>
                 Management was so impressed with my work ethic and ability to solve problems 
                 that they paid for my medical coding education and certification to <strong>best 
                 utilize my talents</strong>.
-              </p>
-            </article>
-          </Fade>
+              </p>           
+            </Fade>
+          </article>
         </section>
         <Link to={ROUTES.EDUCATION} className='buttons'>
         <button className='raise'> SEE EDUCATION NEXT</button>

@@ -36,7 +36,7 @@ input {
 
   @include sm {
     font-size: 1.5em;
-    margin: 6em auto 1em auto;
+    margin: 8em auto 1em auto;
   }
 }
 
@@ -107,6 +107,13 @@ strong {
   opacity: 0;
   @include animation('fadeIn 500ms ease-in 1 200ms forwards');
   @include keyframes(fadeIn) { from { opacity:0; } to { opacity:1; } }
+}
+
+.fade-ins {
+  @include sm {
+    overflow-x: hidden;
+
+  }
 }
 
 // -------------------------------------------------------------------------------------------------
