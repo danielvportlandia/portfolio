@@ -115,7 +115,19 @@
   .article-text-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
+
+    margin-left: 1rem;
+
+    h5 {
+      color: $buttonAE;
+      font-size: 1.5em;
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-top: 0;
+    }
 
     .article-text {
       font-size: 1em;
