@@ -40,6 +40,7 @@
   bottom:0;
   left:0;
   right:0;
+
   border-radius:.25rem;
   box-shadow: 5px 5px 5px $selectable;
   -webkit-backface-visibility:hidden;
@@ -50,26 +51,22 @@
 }
 
 .download-button:before {
-  z-index:2;
-  color:#fff;
   background-color: $buttonBE;
+  color:#fff;
+  z-index:2;
   content:attr(data-label); // initial button text
 }
 
 .download-button:after {
-  z-index:1;
   background-color:#999;
-  background-repeat:no-repeat;
   background-position:center center;
+  background-repeat:no-repeat;
+  z-index:1;
 
   // Loading GIF
   background-image:url(data:image/gif;base64,R0lGODlhEAAQAPIAAJmZmf///7CwsOPj4////9fX18rKysPDwyH+GkNyZWF0ZWQgd2l0aCBhamF4bG9hZC5pbmZvACH5BAAKAAAAIf8LTkVUU0NBUEUyLjADAQAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQACgABACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkEAAoAAgAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkEAAoAAwAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkEAAoABAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQACgAFACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQACgAGACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAAKAAcALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==);
 
-  -webkit-transform:rotateX(180deg);
-  -moz-transform:rotateX(180deg);
-  -ms-transform:rotateX(180deg);
-  transform:rotateX(180deg);
-  
+  @include transform(rotateX(180deg));
    /* Removes the front-facing text content from the button, otherwise, the text would be visible during the transform rotation phase. */
   content:'';
 }
@@ -79,8 +76,5 @@
 }
 
 .download-button.loading {
-  -webkit-transform:rotateX(180deg);
-  -moz-transform:rotateX(180deg);
-  -ms-transform:rotateX(180deg);
-  transform:rotateX(180deg);
+  @include transform(rotateX(180deg));
 }
