@@ -22,45 +22,49 @@ class RSProject extends React.Component {
     return (
       <div className='rs-project-page fade-in'>
 
-        <div className='banner-wrapper parallax'>
-          <h2>No Kids Left On The Sidelines</h2>
+        <div id='rs-banner' className='banner-wrapper parallax'>
+          <h2 className='banner-message'>No Kids Left On The Sidelines</h2>
           <h3>A REDEEMING SOLES INITIATIVE</h3>
         </div>
 
         <div className='project-opener'>
-          <p className='opening-text'>
-            <a className='external-link' href='https://redeemingsoles.org/' target='_blank' rel='noopener noreferrer'>Redeeming Soles</a> is a Seattle-based non-profit organization who is committed to 
-            providing proper footwear to underpriviledged men, women, and children throughout 
-            the Pacific Northwest. <br/>
-            <br/>
-            Their <a className='external-link' href='https://redeemingsoles.org/programs/no-kids-left-on-the-sidelines' target='_blank' rel='noopener noreferrer'>No Kids Left On The Sidelines</a> program helps provide a firm foundation for at-risk youths to stand on by providing shoes and athletic gear to any child in need.
-          </p>
+          <Fade left className='reveals'>
+            <p className='opening-text'>
+              <a className='external-link' href='https://redeemingsoles.org/' target='_blank' rel='noopener noreferrer'>Redeeming Soles</a> is a Seattle-based non-profit organization who is committed to 
+              providing proper footwear to underpriviledged men, women, and children throughout 
+              the Pacific Northwest. <br/>
+              <br/>
+              Their <a className='external-link' href='https://redeemingsoles.org/programs/no-kids-left-on-the-sidelines' target='_blank' rel='noopener noreferrer'>No Kids Left On The Sidelines</a> program helps provide a firm foundation for at-risk youths to stand on by providing shoes and athletic gear to any child in need.
+            </p>
+          </Fade>
 
           { /* Project Details */}
           <ul>
-            <li><strong>Tools:</strong><br/>
-              Travis CI, Jest, Artillery.io, <br/>
-              Webpack, Heroku, <br/>
-              Trello
-            </li>
-            <li><strong>Skills:</strong><br/>
-              React with Redux, <br/>
-              MongoDB with Mongoose, <br/>
-              Node.js & Express, <br/>
-              SASS
-            </li>
-            <li><strong>Roles:</strong><br/>
-              Lead Back-End Developer <br/>
-              TDD Engineer <br/>
-              UX Designer <br/>
-            </li>
-            <li><strong>Timeline:</strong><br/>
-              1 week (Prototype)
-            </li>
+            <Fade right className='reveals'>
+              <li><strong>Tools:</strong><br/>
+                Travis CI, Jest, Artillery.io, <br/>
+                Webpack, Heroku, <br/>
+                Trello
+              </li>
+              <li><strong>Skills:</strong><br/>
+                React with Redux, <br/>
+                MongoDB with Mongoose, <br/>
+                Node.js & Express, <br/>
+                SASS
+              </li>
+              <li><strong>Roles:</strong><br/>
+                Lead Back-End Developer <br/>
+                TDD Engineer <br/>
+                UX Designer <br/>
+              </li>
+              <li><strong>Timeline:</strong><br/>
+                1 week (Prototype)
+              </li>
+            </Fade>
           </ul>
         </div>
 
-        <section>
+        <section className='project-section'>
           <article>
             <Fade top className='reveals'>
               <h4>Meeting with the Client <ClientSVG className='icomoon-svgs'/></h4>
@@ -93,7 +97,7 @@ class RSProject extends React.Component {
           </article>
         </section>
 
-        <section>
+        <section className='project-section'>
           <article>
             <Fade top className='reveals'>
               <h4>Planning <PlanningSVG className='icomoon-svgs'/></h4>
@@ -147,7 +151,7 @@ class RSProject extends React.Component {
           </article>
         </section>
 
-        <section>
+        <section className='project-section'>
           <article>
             <Fade top className='reveals'>
               <h4>Testing <DebugSVG className='icomoon-svgs'/></h4>
@@ -178,7 +182,7 @@ class RSProject extends React.Component {
           </article>
         </section>
 
-        <section>
+        <section className='project-section'>
           <article>
             <div className='article-details-wrapper'>
 
@@ -206,7 +210,7 @@ class RSProject extends React.Component {
           </article>
         </section>
 
-        <section>
+        <section className='project-section'>
           <article>
             <div className='article-details-wrapper'>
 
@@ -232,7 +236,7 @@ class RSProject extends React.Component {
           </article>
         </section>
 
-        <section>
+        <section className='project-section'>
           <article>
             <Fade top className='reveals'>
               <h4>Prototype Specs <PrototypeSVG className='icomoon-svgs'/></h4>
@@ -262,7 +266,7 @@ class RSProject extends React.Component {
           </article>
         </section>
 
-        <section>
+        <section className='project-section'>
           <article>
             <div className='article-details-wrapper'>
 
@@ -290,7 +294,7 @@ class RSProject extends React.Component {
           </article>
         </section>
 
-        <section>
+        <section className='project-section'>
           <article>
             <div className='article-details-wrapper'>
 
@@ -316,8 +320,8 @@ class RSProject extends React.Component {
             </div>
           </article>
         </section>
-        <a href='https://redeeming-soles-front.herokuapp.com/login' target='_blank' rel='noopener noreferrer'>
-          <button className='raise'>CHECK OUT THE PROTOTYPE</button>
+        <a href='https://github.com/RedeemingSoles' target='_blank' rel='noopener noreferrer'>
+          <button className='raise'>CHECKOUT THE PROJECT ON GITHUB</button>
         </a>
       </div>
     );

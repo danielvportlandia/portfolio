@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
+import Flip from 'react-reveal/Flip';
 
 import ROUTES from '../../routes';
 
@@ -281,10 +282,17 @@ class Education extends React.Component {
           <div className='mobile-story-view'>
             <article className='story'>
               <div className='titles-wrapper'>
-                <h2>The Bootcamp Experience</h2>
-                <h3>Rigorous but effective</h3>
+                <Fade top cascade className='reveals'>
+                  <h2>
+                    The Bootcamp <br/>
+                    Experience
+                  </h2>
+                  <h3>Rigorous but effective</h3>
+                </Fade>
               </div>
-              <img src={CFWallImg} className='mobile-image' alt='Code Fellows wall art' title='Code Fellows wall art'/>
+              <Flip top className='reveals'>
+                <img src={CFWallImg} className='mobile-image' alt='Code Fellows wall art' title='Code Fellows wall art'/>
+              </Flip>
               <p>
                 It takes true dedication, focus, and a whole lot of hard 
                 work, but if you can hang in there long enough, then it will become one of 
@@ -301,10 +309,17 @@ class Education extends React.Component {
             </article>
             <article className='story'>
               <div className='titles-wrapper'>
-                <h2>201: Foundations of Software Development</h2>
-                <h3>Doing Things The Hard Way</h3>
+                <Fade top cascade className='reveals'>
+                  <h2>
+                    201: Foundations of <br/>
+                    Software Development
+                  </h2>
+                  <h3>Doing Things The Hard Way</h3>
+                </Fade>
               </div>
-              <img src={vanillaJSImg} className='mobile-image' alt='Learning the fundamentals' title='Learning the fundamentals'/>
+              <Flip top className='reveals'>
+                <img src={vanillaJSImg} className='mobile-image' alt='Learning the fundamentals' title='Learning the fundamentals'/>
+              </Flip>
               <p>
                 This was my introduction to many CS concepts such as <strong>Object-Oriented 
                 Programming (OOP), Document Object Model (DOM) Manipulation & Traversal</strong>, 
@@ -329,10 +344,17 @@ class Education extends React.Component {
             </article>
             <article className='story'>
               <div className='titles-wrapper'>
-                <h2>301: Intermediate Software Development</h2>
-                <h3>Collaboration is the Key</h3>
+                <Fade top cascade className='reveals'>
+                  <h2>
+                    301: Intermediate <br/>
+                    Software Development
+                  </h2>
+                  <h3>Collaboration is the Key</h3>
+                </Fade>
               </div>
-              <img src={agileImg} className='mobile-image' alt='Experience with Agile and SCRUM methodologies' title='Experience with Agile and SCRUM methodologies'/>
+              <Flip top className='reveals'>
+                <img src={agileImg} className='mobile-image' alt='Experience with Agile and SCRUM methodologies' title='Experience with Agile and SCRUM methodologies'/>
+              </Flip>
               <p>
                 In the 301 course, we got our first taste of server-side code. In addition to 
                 cementing our understanding of the fundamentals, we also focused on the 
@@ -357,10 +379,14 @@ class Education extends React.Component {
             </article>
             <article className='story'>
               <div className='titles-wrapper'>
-                <h2>401: Advanced Software Development</h2>
-                <h3>MongoDB, Express, Node.js</h3>
+                <Fade top cascade className='reveals'>
+                  <h2>401: Advanced Software Development</h2>
+                  <h3>MongoDB, Express, Node.js</h3>
+                </Fade>
               </div>
-              <img src={backendDevImg} className='mobile-image' alt='Back-end development in Node.js' title='Back-end development in Node.js'/>
+              <Flip top className='reveals'>
+                <img src={backendDevImg} className='mobile-image' alt='Back-end development in Node.js' title='Back-end development in Node.js'/>
+              </Flip>
               <p>
                 Th advanced JavaScript course started off by diving deep into working with
                 <strong> Node.js</strong> & <strong>Express</strong>. Before we could rely on 
@@ -385,10 +411,17 @@ class Education extends React.Component {
             </article>
             <article className='story'>
               <div className='titles-wrapper'>
-                <h2>Final Days: Birth of a Full-Stack Developer</h2>
-                <h3>Mastering React</h3>
+                <Fade top cascade className='reveals'>
+                  <h2>
+                    Final Days: Birth of a <br/>
+                    Full-Stack Developer
+                  </h2>
+                  <h3>Mastering React</h3>
+                </Fade>
               </div>
-              <img src={graduationImg} className='mobile-image' alt='Graduation day' title='Graduation day'/>
+              <Flip top className='reveals'>
+                <img src={graduationImg} className='mobile-image' alt='Graduation day' title='Graduation day'/>
+              </Flip>
               <p>
                 I chose the 401 Full-Stack JavaScript track due to JavaScript&apos;s versatility 
                 and close relationship with the browser, it was definitely the right call 

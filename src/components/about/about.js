@@ -11,7 +11,9 @@ class About extends React.Component {
     return (
       <div className='about-page fade-in'>
         <p className='hero-text'>A little bit about me first.</p>
-        <img src={profilePic} alt='My loving family and I' title='My loving family and I'/>
+        <div className='profile-pic-wrapper'>
+          <img src={profilePic} alt='My loving family and I' title='My loving family and I'/>
+        </div>
         <section className='bio'>
           <Fade top className='reveals'>
             <h2>Hello, I&apos;m Daniel!</h2>

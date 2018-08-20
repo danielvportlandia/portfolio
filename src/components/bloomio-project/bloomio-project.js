@@ -19,39 +19,43 @@ class BloomioProject extends React.Component {
     return (
       <div className='bloomio-project-page fade-in'>
         
-        <div className='banner-wrapper parallax'>
-          <h2>Bloomio</h2>
+        <div id='bloomio-banner' className='banner-wrapper parallax'>
+          <h2 className='banner-message'>Bloomio</h2>
         </div>
 
         <div className='project-opener'>
-          <p className='opening-text'>
-            <a className='external-link' href='https://github.com/Bloomio/Bloomio-backend/blob/master/README.md' target='_blank' rel='noopener noreferrer'>Bloomio</a> is a plant management API which users can use to store all their individual plants in their &quot;planter box&quot; where watering updates are provided based on the plant&apos;s watering schedule, season, and last watered date.
-          </p>
+          <Fade left className='reveals'>
+            <p className='opening-text'>
+              <a className='external-link' href='https://github.com/Bloomio/Bloomio-backend/blob/master/README.md' target='_blank' rel='noopener noreferrer'>Bloomio</a> is a plant management API which users can use to store all their individual plants in their &quot;planter box&quot; where watering updates are provided based on the plant&apos;s watering schedule, season, and last watered date.
+            </p>
+          </Fade>
 
           { /* Project Details */}
           <ul>
-            <li><strong>Tools:</strong><br/>
-              Travis CI, Jest, <br/>
-              Artillery.io, Twilio, <br/>
-              AWS&apos;s S3
-            </li>
-            <li><strong>Skills:</strong><br/>
-              MongoDB with Mongoose, <br/>
-              Node.js & Express, <br/>
-              Moment.js
-            </li>
-            <li><strong>Roles:</strong><br/>
-              Visionary <br/>
-              Back-End Developer <br/>
-              TDD Engineer <br/>
-            </li>
-            <li><strong>Timeline:</strong><br/>
-              1 week (Prototype)
-            </li>
+            <Fade right className='reveals'>
+              <li><strong>Tools:</strong><br/>
+                Travis CI, Jest, <br/>
+                Artillery.io, Twilio, <br/>
+                AWS&apos;s S3
+              </li>
+              <li><strong>Skills:</strong><br/>
+                MongoDB with Mongoose, <br/>
+                Node.js & Express, <br/>
+                Moment.js
+              </li>
+              <li><strong>Roles:</strong><br/>
+                Visionary <br/>
+                Back-End Developer <br/>
+                TDD Engineer <br/>
+              </li>
+              <li><strong>Timeline:</strong><br/>
+                1 week (Prototype)
+              </li>
+            </Fade>
           </ul>
         </div>
 
-        <section>
+        <section className='project-section'>
           <article>
             <Fade top className='reveals'>
               <h4>Idea Origins <IdeaSVG className='icomoon-svgs'/></h4>
@@ -89,7 +93,7 @@ class BloomioProject extends React.Component {
           </article>
         </section>
 
-        <section>
+        <section className='project-section'>
           <article>
             <Fade top className='reveals'>
               <h4>Planning <PlanningSVG className='icomoon-svgs'/></h4>
@@ -133,7 +137,7 @@ class BloomioProject extends React.Component {
           </article>
         </section>
 
-           <section>
+        <section className='project-section'>
           <article>
             <Fade top className='reveals'>
               <h4>Testing <DebugSVG className='icomoon-svgs'/></h4>
@@ -162,7 +166,7 @@ class BloomioProject extends React.Component {
           </article>
         </section>
 
-        <section>
+        <section className='project-section'>
           <article>
           <Fade top className='reveals'>
             <h4>Project Details <PrototypeSVG className='icomoon-svgs'/></h4>
@@ -170,7 +174,7 @@ class BloomioProject extends React.Component {
             <div className='article-details-wrapper'>
 
               <div className='article-text-wrapper'>
-                <Fade top cascade className='reveals'>
+                <Fade top className='reveals'>
                   <h5>Collaboration:</h5>
                   <p>
                     After a thorough planning phase, we scaffolded the project and pair 
@@ -179,6 +183,7 @@ class BloomioProject extends React.Component {
                   </p>
                 </Fade>
 
+                <Fade top className='reveals'>
                   <h5>External API Integration:</h5>
                   <p>
                     With our schemas in place, we began the process of integrating external 
@@ -186,6 +191,7 @@ class BloomioProject extends React.Component {
                     second, was Twilio for sending daily plant notifications to the user at a 
                     preferred time.
                   </p>
+                </Fade>
               </div>
 
               <div className='article-text-wrapper'>
@@ -199,7 +205,7 @@ class BloomioProject extends React.Component {
                   </p>
                 </Fade>
 
-                <Fade top>
+                <Fade top className='reveals'>
                   <h5>What I learned:</h5>
                   <p>
                       How to manage web pre-hooks and post-hooks with schemas <br/>
