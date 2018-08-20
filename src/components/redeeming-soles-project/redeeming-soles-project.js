@@ -255,7 +255,7 @@ class RSProject extends React.Component {
 
               <div className='images-wrapper'>
                 <figure>
-                  <Flip top className='reveals'>
+                  <Flip top cascade className='reveals'>
                     <img src={profileFormImg}/>
                     <figcaption>Profile Form</figcaption>
                   </Flip>
@@ -272,7 +272,7 @@ class RSProject extends React.Component {
 
               <div className='images-wrapper'>
                 <figure>
-                  <Flip top className='reveals'>
+                  <Flip top cascade className='reveals'>
                     <img src={userFormImg}/>
                     <figcaption>Request Form</figcaption>
                   </Flip>
@@ -310,7 +310,7 @@ class RSProject extends React.Component {
 
               <div className='images-wrapper'>
                 <figure>
-                  <Flip top className='reveals'>
+                  <Flip top cascade className='reveals'>
                     <img src={adminFormImg}/>
                     <figcaption>Administrative Inventory Form</figcaption>
                   </Flip>

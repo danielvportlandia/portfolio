@@ -18,16 +18,16 @@ img {
 
 p {
   margin: 2em auto;
-  max-width: $max-width;
+  max-width: 900px;
 }
 
 input {
   margin-right: 10px;
 }
 
-// -------------------------------------------------------------------------------------------------
-// HERO TEXT/IMAGES/BANNERS
-// -------------------------------------------------------------------------------------------------
+// ========================================
+// ====== HERO TEXT/IMAGES/BANNERS ========
+// ========================================
 .hero-text {
   color: $buttonBE;
   font-size: 3em;
@@ -87,9 +87,9 @@ strong {
   }
 }
 
-// -------------------------------------------------------------------------------------------------
-// PARALLAX IMAGE SCROLLING
-// -------------------------------------------------------------------------------------------------
+// ===============================
+// ====== PARALLAX IMAGES ========
+// ===============================
 .parallax {
   background-attachment: fixed;
   background-position: center;
@@ -97,9 +97,9 @@ strong {
   background-size: cover;
 }
 
-// -------------------------------------------------------------------------------------------------
-// SVG STYLING
-// -------------------------------------------------------------------------------------------------
+// =============================
+// ======= SVG STYLING =========
+// =============================
 .devicon-svg {
   max-height: 10em;
   width: 7em;
@@ -125,17 +125,34 @@ strong {
   }
 }
 
-// -------------------------------------------------------------------------------------------------
-// LANDING PAGE STYLING
-// -------------------------------------------------------------------------------------------------
+// Icomoon SVGs
+.icomoon-svgs {
+  height: 1em;
+  width: 1em;
+
+  path {
+    fill: $buttonBE;
+  }
+}
+
+// Drop down menu icons in Nav
+.caret {
+  @include transition(250ms ease-in-out);
+  height: 1em;
+  width: 1em;
+}
+
+// =============================
+// ====== LANDING PAGE =========
+// =============================
 .landing-page {
   margin: 5vw auto;
   width: 80%;
 }
 
-// -------------------------------------------------------------------------------------------------
-// PAGE LOAD
-// -------------------------------------------------------------------------------------------------
+// =============================
+// ======== PAGE LOAD ==========
+// =============================
 .fade-in {
   opacity: 0;
   @include animation('fadeIn 500ms ease-in 1 200ms forwards');
@@ -149,9 +166,9 @@ strong {
   }
 }
 
-// -------------------------------------------------------------------------------------------------
-// BUTTON STYLING
-// -------------------------------------------------------------------------------------------------
+// =============================
+// ========= BUTTONS ===========
+// =============================
 button a {
   color: black;
   font-size: 1.5em;
@@ -190,9 +207,9 @@ $colors: (
   }
 }
 
-// -------------------------------------------------------------------------------------------------
-// PROJECT CLASSES
-// -------------------------------------------------------------------------------------------------
+// =============================
+// ====== PROJECT PAGES ========
+// =============================
 .project-opener {
   display: flex;
   justify-content: space-between;
@@ -254,17 +271,71 @@ $colors: (
   }
 }
 
-.article-text-wrapper {
+.article-details-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-bottom: 20rem;
+  max-height: 70%;
+
+  @include sm {
+    flex-direction: column;
+  }
+
+  h5 {
+    color: $buttonAE;
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  .article-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  
+    margin-left: 1rem;
+  
+    .article-text {
+      font-size: 1em;
+      margin: 1em auto;
+      min-width: 300px;
+      text-align: center;
+    }
+  }
+}
+
+.images-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 
-  margin-left: 1rem;
+  figure {
+    height: 45%;
+    margin: 2em;
+    width: 50%;
 
-  .article-text {
-    font-size: 1em;
-    margin: 1em auto;
-    min-width: 300px;
-    text-align: center;
+    img {
+      box-shadow: 3px 3px 4px $selectable;
+      max-width: 600px;
+
+      @include sm {
+        max-width: 320px;
+      }
+    }
+
+    figcaption {
+      color: $off-white;
+      font-size: 0.9em;
+      padding-left: 1em;
+
+      @include sm {
+        font-size: 0.6em;
+      }
+    }
   }
 }

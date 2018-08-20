@@ -1,21 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Audiowide|Damion|Poppins|Press+Start+2P'); 
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
-// -------------------------------------------------------------------------
-// TYPOGRAPHY
-// -------------------------------------------------------------------------
+// =============================
+// ======== TYPOGRAPHY =========
+// =============================
 
-// MAIN FONT
+// ***** MAIN FONT *****
 $poppins: 'Poppins', sans-serif;
 
-// IMAGE FONTS
-$audiowide: 'Audiowide', cursive;
-$damion: 'Damion', cursive;
-$press-start-2P: 'Press Start 2P', cursive;
-$max-width: 900px;
-
-// -------------------------------------------------------------------------
 // COLORS
-// -------------------------------------------------------------------------
 $background: #252627;
 $background-banner: #181818;
 $buttonBE: #08fdd8;
@@ -26,20 +18,20 @@ $shadow: #969696;
 $opaque: rgba(250, 250, 250, 0.2);
 $heroku-purple: #6762a6;
 
-// -------------------------------------------------------------------------
-// MEDIA QUERIES
-// -------------------------------------------------------------------------
+// =============================
+// ====== MEDIA QUERIES ========
+// =============================
 
 // Small tablets and large smartphones (landscape view)
 $screen-sm-min: 320px;
 $screen-sm-max: 767px;
 
-// Small tablets (portrait view)
+// Small tablets (portrait view) 
 $screen-md-min: 768px;
 $screen-md-max: 991px;
 
-// Tablets and small desktops
+// Tablets and small desktops 
 $screen-lg-min: 992px;
 
-// Large tablets and desktops
+// Large tablets and desktops 
 $screen-xl-min: 1200px;
