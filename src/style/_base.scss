@@ -184,7 +184,8 @@ button a {
   line-height: 1;
   margin: 0.5em;
   padding: 1em 2em;
-  transition: 0.25s;
+
+  @include transition(0.25s);
   
   &:hover,
   &:focus { 
@@ -192,7 +193,8 @@ button a {
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
     color: $buttonAE;
     text-shadow: 0 1px;
-    transform: translateY(-0.25em);
+
+    @include transform(translateY(-0.25em));
   }
 }
 
