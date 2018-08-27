@@ -12,18 +12,22 @@ body {
   width: 100%;
 }
 
-img {
-  max-width: 900px;
-}
+  a {
+    @include css3(text-decoration, none);
+  }
 
-p {
-  margin: 2em auto;
-  max-width: 900px;
-}
+  img {
+    max-width: 900px;
+  }
 
-input {
-  margin-right: 10px;
-}
+  p {
+    margin: 2em auto;
+    max-width: 900px;
+  }
+
+  input {
+    margin-right: 10px;
+  }
 
 // ========================================
 // ====== HERO TEXT/IMAGES/BANNERS ========
@@ -41,7 +45,6 @@ input {
 }
 
 .external-link {
-  text-decoration: none;
   color: $buttonBE;
   font-weight: 400;
 
@@ -111,9 +114,7 @@ strong {
   width: 5em;
 }
 
-.wiggle {
-
-  &:hover {
+.wiggle:hover {
     @include animation('wiggle 600ms 1 ease-in-out');
     @include keyframes(wiggle) {
       0% { transform: rotate(10deg); }
@@ -121,7 +122,6 @@ strong {
       50% { transform: rotate(15deg); }
       75% { transform: rotate(-5deg); }
       100% { transform: rotate(0deg); }
-    }
   }
 }
 
@@ -137,9 +137,10 @@ strong {
 
 // Drop down menu icons in Nav
 .caret {
-  @include transition(250ms ease-in-out);
   height: 1em;
   width: 1em;
+
+  @include transition(250ms ease-in-out);
 }
 
 // =============================
@@ -155,6 +156,7 @@ strong {
 // =============================
 .fade-in {
   opacity: 0;
+
   @include animation('fadeIn 500ms ease-in 1 200ms forwards');
   @include keyframes(fadeIn) { from { opacity:0; } to { opacity:1; } }
 }
@@ -162,7 +164,6 @@ strong {
 .reveals {
   @include sm {
     overflow-x: hidden;
-
   }
 }
 
