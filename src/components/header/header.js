@@ -23,10 +23,10 @@ export default class Header extends React.Component {
       <header className='topnav'>
         <nav className='nav-left'>
           <div className='nav-button-container'>
-            <button className='link-button'><Link to='/'>Home <HomeSVG className='icomoon-svgs wiggle'/></Link></button>
+            <Link to='/'><button className='link-button'>Home</button><HomeSVG className='icomoon-svgs wiggle'/></Link>
           </div>
           <div className='nav-button-container'>
-            <button className='link-button'><Link to='/about'>About <AboutMeSVG className='icomoon-svgs wiggle'/></Link></button>
+          <Link to='/about'><button className='link-button'>About</button><AboutMeSVG className='icomoon-svgs wiggle'/></Link>
           </div>
           <div className='dropdown'>
             <button className='dropbutton'>
@@ -52,10 +52,10 @@ export default class Header extends React.Component {
             </div>
           </div>
           <div className='nav-button-container'>
-            <button className='link-button'><Link to='/resume'>Resume <ResumeSVG className='icomoon-svgs wiggle'/></Link></button>
+          <Link to='/resume'><button className='link-button'>Resume</button><ResumeSVG className='icomoon-svgs wiggle'/></Link>
           </div>
           <div className='nav-button-container'>
-            <button className='link-button'><Link to='/contact'>Contact <ContactSVG className='icomoon-svgs wiggle'/></Link></button>
+          <Link to='/contact'><button className='link-button'>Contact</button><ContactSVG className='icomoon-svgs wiggle'/></Link>
           </div>
         </nav>
 

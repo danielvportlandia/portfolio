@@ -32,19 +32,18 @@ header {
     margin-top: 2em;
     padding-left: 3em;
 
+    a {
+      color: $off-white;
+
+      &:hover {
+        color: $buttonAE;
+        text-shadow: 0 1px;
+      }
+    }
+
     @include sm {
       display: none;
     }
-  }
-
-  h1 a:-webkit-any-link {
-    text-decoration: none;
-    color: $off-white;
-  }
-
-  h1 a:hover {
-    color: $buttonAE;
-    text-shadow: 0 1px;
   }
 
   nav {
@@ -61,15 +60,17 @@ header {
     padding: 0;
     width: 100%;
 
-    li a {
-      border-right: 1px solid #f4f4f4;
-      color: black;
-      display: block;
-      padding: 20px 20px;
-      text-decoration: none;
-
-      &:hover {
-        background-color: #f4f4f4;
+    li {
+      a {
+        border-right: 1px solid #f4f4f4;
+        color: black;
+        display: block;
+        padding: 20px 20px;
+        text-decoration: none;
+  
+        &:hover {
+          background-color: #f4f4f4;
+        }
       }
     }
   }
@@ -114,8 +115,9 @@ header {
 
 .menu-list {
   height: 0;
-  transition: height 0.3s linear;
-  transition-delay: 0.2s;
+
+  @include transition(height 0.3s linear);
+  @include transition-delay(0.2s);
 }
 
 // =============================
@@ -127,20 +129,18 @@ header {
   .link-button {
     background-color: inherit;
     border: none;
+    color: $off-white;
+    cursor: pointer;
+    display: inline-block;
     font-family: inherit;
-    font-size: 0.8em;
+    font-size: 1.2em;
     outline: none;
     text-align: left;
-  }
-
-  .link-button a {
-    color: $off-white;
-    display: inline-block;
     text-decoration: none;
-  }
 
-  .link-button a:hover {
-    color: $buttonAE;
+    &:hover {
+      color: $buttonAE;
+    }
   }
 }
 
@@ -159,10 +159,10 @@ header {
     font-size: 1.2em;
     outline: none;
     text-align: left;
-  }
 
-  .dropbutton:hover {
-    color: $buttonAE;
+    &:hover {
+      color: $buttonAE;
+    }
   }
 
   .dropdown-list {
@@ -172,18 +172,18 @@ header {
     min-width: 160px;
     position: absolute;
     z-index: 1;
-  }
 
-  .dropdown-list a:-webkit-any-link {
-    color: $off-white;
-    display: block;
-    margin: 1em 0;
-    text-align: left;
-    text-decoration: none;
-  }
+    a {
+      color: $off-white;
+      display: block;
+      margin: 1em 0;
+      text-align: left;
+      text-decoration: none;
 
-  .dropdown-list a:-webkit-any-link:hover {
-    color: $buttonAE;
+      &:hover {
+        color: $buttonAE;
+      }
+    }
   }
 }
 
@@ -193,6 +193,6 @@ header {
 
 // Animation for the drop-down section SVGs
 .dropdown:hover .dropbutton .caret {
+  @include transform(rotate(90deg));
   @include transition(250ms ease-in-out);
-  transform: rotate(90deg);
 }
